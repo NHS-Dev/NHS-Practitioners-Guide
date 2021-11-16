@@ -1,2 +1,19 @@
 site_name: National Hydrological Service Practitioners Guide
-site_url: https://example.com
+site_url: https://nhs-dev.github.io/NHS-Practitioners-Guide/
+
+nav: 
+    - Home: index.md
+    - About: about.md 
+    - Products: 
+        - NSRPS: products/NSRPS/nsrps.md
+    - Glossary: Glossary/glossary.md 
+    - Data access: data_access/data_access.md 
+  
+
+theme: 
+    name: readthedocs
+    highlightjs: true 
+    prev_next_buttons_location: none
+    Titles_only: True
+    
+    

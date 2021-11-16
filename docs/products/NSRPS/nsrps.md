@@ -1,0 +1,138 @@
+# National Surface and River Prediction System
+
+## Overview
+
+NSRPS is a Complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current 
+and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. 
+
+## Version summary - link to previous versions of the practioner guide 
+
+**Curent Version** : 3.1.0
+
+**past versions**
+
+## Product Summary:
+
+|             | Description |
+| ----------- | ----------- |
+| Spatial Domain      | 6 major basins in Canada       |
+| Spatial Resolution   | 1-km grid        |
+| Temporal Resolution   | Hourly        |
+| Frequency   | 2x / day at 00 and 12 UTC        |
+| Lead-time   | NA        |
+| Current version  | 3.1.0       |
+
+## Domain
+
+NSPRS is currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada. 
+
+
+
+- list basins
+- brief summary domain describing that covers differs 
+
+*insert image of domain below* 
+
+## System Components
+NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
+High Resolution Deterministic Prediction System (HRDPS).The component systems of NSRPS include: 
+
+<details>
+<summary>High Resolution Ensemble Precipitation Analysis (HREPA)</summary>
+
+<ul><li> Purpose : Precipitation analyses</li>
+<ul><li> Domain : Most of Canada plus transboundary areas of U.S.</li>
+<ul><li> Spatial Resolution: 2.5 km </li>
+<ul><li> Temporal Resolution : 6-hourly </li>
+<ul><li> Frequency : 4x / day at 00, 06, 12 and 18 UTC </li>
+<ul><li> Lead-time : 6 days (144 hrs) </li>
+<ul><li> Current Version : </li>
+<ul><li> Additional Information : </li>
+
+</details>
+<br>
+
+
+<details>
+<summary> Canadian Land Data Assimilation System (CaLDAS-Sat)</summary>
+
+<ul><li> Purpose : Land surface analyses </li>
+<ul><li> Domain : Most of Canada plus transboundary areas of U.S. </li>
+<ul><li> Spatial Resolution : 2.5 km </li>
+<ul><li> Temporal Resolution : Hourly </li>
+<ul><li> Frequency : 2x / day at 00 and 12 UTC </li>
+<ul><li> Lead-time : NA </li>
+<ul><li> Current version : 2.1.3 </li>
+<ul><li> additional information :  </li>
+
+</details>
+<br>
+
+<details>
+<summary> High Resolution Deterministic Land Prediction System (HRDLPS)</summary>
+
+<ul><li> Purpose : Land-surface predictions </li>
+<ul><li> Domain : Most of Canada plus transboundary areas of U.S. </li>
+<ul><li> Spatial Resolution : 2.5 km </li>
+<ul><li> Temporal Resolution: Hourly </li>
+<ul><li> Frequency : 2x / day at 00 and 12 UTC </li>
+<ul><li> Lead-time : 6 days (144 hrs) </li>
+<ul><li> Current Version :  </li>
+<ul><li> Additional Information : </li> 
+
+</details>
+<br>
+
+<details>
+<summary> Deterministic Hydrological Prediction System (DHPS)</summary>
+
+<ul><li> Purpose :  Flow analyses and predictions </li> 
+<ul><li> Domain : currently established in six major basins, including the Yukon, Mackenzie, Nelson, and Churchill rivers, 
+the Great Lakes – St. Lawrence River basin, and the terrain draining into the Gulf of St. Lawrence. The Columbia, Skeena and St. John rivers are currently in development. </li> 
+<ul><li> Spatial Resolution : 1 km </li> 
+<ul><li> Temporal Resolution : Hourly </li> 
+<ul><li> Frequency : 2x / day at 00 and 12 UTC </li> 
+<ul><li> Lead-time : 6 days (144 hrs) </li> 
+<ul><li> Current Version : </li> 
+<ul><li> Additional Information : </li> 
+
+
+</details>
+<br>
+
+<details>
+<summary> Simulation Hydrodynamique Opérationnel (SHOP)</summary>
+
+<ul><li> Purpose :  Hydrodynamic analyses and predictions </li> 
+<ul><li> Domain : St. Lawrence River (and some of its larger tributaries?) </li> 
+<ul><li> Spatial Resolution : ~200 m or less </li> 
+<ul><li> Temporal Resolution : Hourly </li> 
+<ul><li> Frequency : 2x / day at 00 and 12 UTC </li> 
+<ul><li> Lead-time : 6 days (144 hrs) </li> 
+<ul><li> Current Version : </li> 
+<ul><li> Additional Information : </li> 
+</details>
+<br>
+
+
+## Data Access 
+
+Put information regarding data access here 
+- seperate page -- plain language summary describing ways of accessing data and data dissemination systems 
+
+
+## Status 
+
+- seperate page -- plain language summary describing various status of prediction products (i.e. experimental, operational, etc)
+
+ 
+
+## Additional information
+
+- journal articles
+- technical notes -- science documentation
+- specifications -- 
+- glossary
+
+## 
+

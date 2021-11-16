@@ -1,0 +1,63 @@
+# System name 
+
+## Overview
+
+*system overview*
+
+## Version summary 
+
+**Curent Version** : 3.1.0
+**past versions** : NA
+
+## Product Summary:
+
+|             | Description |
+| ----------- | ----------- |
+| Spatial Domain      |       |
+| Spatial Resolution   |       |
+| Temporal Resolution   |         |
+| Frequency   |       |
+| Lead-time   |         |
+| Current version  |     |
+
+## Domain 
+
+## System Components
+
+*description of system components*
+
+<details>
+<summary>component 1</summary>
+
+<ul><li> Purpose : </li>
+<ul><li> Domain : </li>
+<ul><li> Spatial Resolution : </li>
+<ul><li> Temporal Resolution :</li>
+<ul><li> Frequency : </li>
+<ul><li> Lead-time :  </li>
+<ul><li> Current Version : </li>
+<ul><li> Additional Information : </li>
+
+</details>
+<br>
+
+
+## Data Access 
+
+*data access instructions*
+
+## Status 
+
+*status of the product - i.e operational, experimental, etc 
+
+## Additional information
+
+*additional information* 
+
+Examples: 
+- journal articles
+- technical notes -- science documentation
+- specifications -- 
+- glossary
+
+
