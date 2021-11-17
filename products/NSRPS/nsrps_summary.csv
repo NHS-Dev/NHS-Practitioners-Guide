@@ -1,0 +1,7 @@
+Attribute,Description
+Spatial Domain,6 major basins in Canada
+Spatial Resolution,1-km grid
+Temporal Resolution,Hourly
+Frequency,2x / day at 00 and 12 UTC
+Lead-time,NA
+Current version,3.1.0
