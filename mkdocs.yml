@@ -1,19 +1,47 @@
 site_name: National Hydrological Service Practitioners Guide
 site_url: https://nhs-dev.github.io/NHS-Practitioners-Guide/
+site_description: National Hydrological Service Pracititioners guide 
+
+# name of the remote set in your fork where the documentation will actually be deployed
+# validate value with `git remote -v`, it must be pointing to https://github.com/NHS-Dev/NHS-Practitioners-Guide.git
+remote_name: origin
 
 nav: 
     - Home: index.md
-    - About: about.md 
-    - Products: 
+    - Available Products: 
         - NSRPS: products/NSRPS/nsrps.md
-    - Glossary: Glossary/glossary.md 
     - Data access: data_access/data_access.md 
-  
-
+    - Glossary: glossary/glossary.md 
+    - Usage and Tutorials: 
+        - Example page: usage_and_tutorials/test.md
 theme: 
-    name: readthedocs
-    highlightjs: true 
-    prev_next_buttons_location: none
-    Titles_only: True
+    name: material
+    # highlightjs: true 
+    # prev_next_buttons_location: none
+    # Titles_only: True
+    palette:
+        primary: blue grey
+    favicon: assets/favicon.png
+    features:
+        - navigation.tabs
+        - content.tabs.link
+        - navigation.top
+
+plugins:
+    - search 
+    - table-reader
     
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - tables
     
+extra:
+    generator: false
+    
+
+#required libraries 
+# mkdocs
+# mkdocs-material
+# mkdocs-table-reader-plugin

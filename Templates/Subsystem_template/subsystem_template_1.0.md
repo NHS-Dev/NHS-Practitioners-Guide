@@ -22,25 +22,9 @@
 
 ## Domain 
 
-## System Components
+## System description 
 
-*description of system components*
-
-<details>
-<summary>component 1</summary>
-
-<ul><li> Purpose : </li>
-<ul><li> Domain : </li>
-<ul><li> Spatial Resolution : </li>
-<ul><li> Temporal Resolution :</li>
-<ul><li> Frequency : </li>
-<ul><li> Lead-time :  </li>
-<ul><li> Current Version : </li>
-<ul><li> Additional Information : </li>
-
-</details>
-<br>
-
+*description of system*
 
 ## Data Access 
 
