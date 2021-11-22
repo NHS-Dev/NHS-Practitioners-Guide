@@ -5,11 +5,12 @@
 <p> NSRPS is a Complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current 
 and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. </P>
 
-## Version summary
+## **Version summary**
 
 **Curent Version**: 3.1.0
 <br>
-**past versions**: NA
+**Past Versions**: 
+<li> *[old_version](../NSRPS/previous_versions/nsrps.md)</li>
 
 ## Product Summary:
 
@@ -98,12 +99,11 @@ the Great Lakes – St. Lawrence River basin, and the terrain draining into the 
 <li>  Current Version : </li> 
 <li>  Additional Information : </li> 
 </details>
-<br>
 
 
 ## Data Access 
 
-Currently NSPRS data is only available through ECCC's internal Science network.
+Currently NSPRS data is only available through ECCC's internal Science Network.
 
 ## Status 
 

@@ -4,14 +4,19 @@ site_description: National Hydrological Service Pracititioners guide
 
 # name of the remote set in your fork where the documentation will actually be deployed
 # validate value with `git remote -v`, it must be pointing to https://github.com/NHS-Dev/NHS-Practitioners-Guide.git
-remote_name: github
+remote_name: origin
 
 nav: 
     - Home: index.md
     - Available Products: 
-        - NSRPS: products/NSRPS/nsrps.md
-    - Data access: data_access/data_access.md 
-    - Glossary: glossary/glossary.md 
+        - NSRPS: products/NSRPS/nsrps-3.1.0.md
+        - Subsystems:
+            - DHPS: products/DHPS/DHPS-3.1.0.md
+    - Data Access: data_access/data_access.md 
+    - Additional Information: 
+        - Glossary: additional_information/glossary/glossary.md 
+        - Operation Statuses: additional_information/Op_status/op-status.md
+        - License: license/license.md
     - Usage and Tutorials: 
         - Example page: usage_and_tutorials/test.md
 theme: 

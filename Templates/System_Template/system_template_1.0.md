@@ -1,28 +1,22 @@
-# System name 
+# **System name** 
 
-## Overview
+## **Overview**
 
 *system overview*
 
-## Version summary 
+## **Version summary**
 
 **Curent Version** : --
-**past versions** : --
+<br>
+**Past Versions** : --
 
-## Product Summary:
+## **Product Summary**
 
-|             | Description |
-| ----------- | ----------- |
-| Spatial Domain      |       |
-| Spatial Resolution   |       |
-| Temporal Resolution   |         |
-| Frequency   |       |
-| Lead-time   |         |
-| Current version  |     |
+{{ read_csv('docs/products/path/to/summary.csv') }}
 
-## Domain 
+## **Domain**
 
-## System Components
+## **System Components**
 
 *description of system components*
 
@@ -42,24 +36,28 @@
 <br>
 
 
-## Data Access 
+## **Data Access**
 
 *data access instructions*
 
-## License 
+## **License**
 
-## Status 
-
-*status of the product - i.e operational, experimental, etc 
-
-## Additional information
-
-*additional information* 
-
-Examples: 
-- journal articles
-- technical notes -- science documentation
-- specifications -- 
-- glossary
+The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
 
 
+## **Status** 
+
+**Current Status**: Experimental
+<br>
+*click [here](../Status_definitions/status.md) for descriptions of different operational statuses*
+ 
+
+## **Additional information**
+
+** [Technical note](./path/to/doc) **
+<br>
+** [Specifications](./) **
+<br> 
+** [Glossary](../../additional_information/glossary/glossary.md) **
+<br>
+** [Change log](./path/to/doc) **
