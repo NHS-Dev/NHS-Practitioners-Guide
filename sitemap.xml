@@ -2,22 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/</loc>
-         <lastmod>2021-11-17</lastmod>
+         <lastmod>2021-11-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/about/</loc>
-         <lastmod>2021-11-17</lastmod>
+         <lastmod>2021-11-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/glossary/glossary/</loc>
-         <lastmod>2021-11-17</lastmod>
+         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/additional_information/glossary/glossary/</loc>
+         <lastmod>2021-11-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/NSRPS/nsrps/</loc>
-         <lastmod>2021-11-17</lastmod>
+         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/license/license/</loc>
+         <lastmod>2021-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/DHPS/DHPS-3.1.0/</loc>
+         <lastmod>2021-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/NSRPS/nsrps-3.1.0/</loc>
+         <lastmod>2021-11-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
