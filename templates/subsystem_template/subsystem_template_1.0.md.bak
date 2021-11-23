@@ -16,14 +16,14 @@ tags:
 </p>
 
 * summary table -- see summary.csv for example template 
-<!-- {{ read_csv('docs/products/path/to/summary.csv') }}
- -->
+<!-- {{ read_csv('<!-- {{ read_csv('docs/products/PRODUCT/summary-table/summary.csv') }} -->
+
 ** Current version: ** x.x.x
 <br>
 ** Past versions: **
 
-* [x.x](./path/to/old_version.md)
-* [x.x](../../license/license.md)
+* [x.x](./previous_versions/old_version.md)
+* [x.x](./previous_versions/old_version.md)
 
 ## **Domain**
 

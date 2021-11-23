@@ -27,10 +27,6 @@ tags:
 * [x.x](./previous_versions/old_version.md)
 
 
-## **Product Summary**
-
-{{ read_csv('docs/products/path/to/summary.csv') }}
-
 ## **Domain**
 
 <p>
@@ -46,8 +42,8 @@ tags:
 <p>
 *description of system and components*
 </p>
-* [Component 1)](./path/to/old_version.md)
-* [Component 12)](./path/to/old_version.md)
+* [Component 1)](./path/to/component.md)
+* [Component 1)](./path/to/component.md)
 
 ## **Data Access**
 
