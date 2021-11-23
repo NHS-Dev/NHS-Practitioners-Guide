@@ -16,7 +16,7 @@ tags:
 </p>
 
 * summary table -- see summary.csv for example template 
-{{ read_csv('docs/products/path/to/summary.csv') }}
+<!-- {{ read_csv('docs/products/path/to/summary.csv') }} -->
 
 ** Current version: ** x.x.x
 <br>

@@ -50,7 +50,9 @@ drop-down menu for outputs:
 
 ## **Data Access**
 
-*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) *  elaborate on what we mean.  Also, I see HTML tags (e.g., <p> <br> ) in the other versions, do we include info on that here?
+<p>
+*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) * 
+</p>
 
 ## **License**
 

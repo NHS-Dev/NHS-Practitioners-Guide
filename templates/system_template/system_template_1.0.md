@@ -42,15 +42,18 @@ tags:
 ![alt text](domain.png "Title")
 
 ## **System Components**
-
+<p>
 *description of system and components*
-
+</p>
 * [Component 1)](./path/to/old_version.md)
 * [Component 12)](./path/to/old_version.md)
 
 ## **Data Access**
 
-*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) *  elaborate on what we mean.  Also, I see HTML tags (e.g., <p> <br> ) in the other versions, do we include info on that here?
+<p>
+*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) *  
+</p>
+
 
 ## **License**
 
