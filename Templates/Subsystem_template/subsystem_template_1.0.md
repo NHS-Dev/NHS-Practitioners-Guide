@@ -1,35 +1,60 @@
+---
+title: System acrynom 
+tags: 
+- relevant
+- tags
+---
+
 # System name 
 
 ## **Overview**
 
-*system overview*
+<p>
 
-## **Version Summary**
+*brief and plain language description of the system*
 
-**Curent Version** : --
-**Past Versions** : --
+</p>
 
-## **Product Summary**
+* summary table -- see summary.csv for example template 
+<!-- {{ read_csv('docs/products/path/to/summary.csv') }}
+ -->
+** Current version: ** x.x.x
+<br>
+** Past versions: **
 
-{{ read_csv('docs/products/path/to/summary.csv') }}
+* [x.x](./path/to/old_version.md)
+* [x.x](../../license/license.md)
 
 ## **Domain**
 
+<p>
+
+*Describe the domain here*
+
+</p>
+
+*insert image of domain -- if available 
 ![alt text](domain.png "Title")
 
 ## **System Description**
+<p>
 
-*description of system*
+*provide a more detailed description of the system, which can include more detailed overview of the system or product*
+
+<details>
+<summary>Outputs </summary>
+drop-down menu for outputs:
+<li> list the outputs here </li>
+</details>
+</p>
 
 ## **Data Access**
 
-*data access instructions*
+*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) *  elaborate on what we mean.  Also, I see HTML tags (e.g., <p> <br> ) in the other versions, do we include info on that here?
 
 ## **License**
 
 The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
-
-
 
 ## **Status**
 

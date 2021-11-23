@@ -1,1 +1,5 @@
-Attribute,DescriptionPurpose,Flow analyses and predictionsSpatial Domain,6 major basins in CanadaSpatial Resolution,1-km gridTemporal Resolutio,HourlyFrequency,2x / day at 00 and 12 UTLead-time,6 days (144 hrs)Current version,3.1.0
+Attribute,Description
+Product Type ,Forecast 
+Temporal Resolution,Hourly
+Frequency,2x / day at 00 and 12 UT
+Lead-time,6 days (144 hrs)

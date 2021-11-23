@@ -1,3 +1,11 @@
+---
+title: DHPS
+tags: 
+- Hydrology
+- Discharge
+- Real-time forecast 
+---
+
 # **Deterministic Hydrologic Prediction System (DHPS)**
 
 ## **Overview**
@@ -11,15 +19,14 @@ does not add or remove water to or from the outputs of the surface model.
 
 </p> 
 
-## **Version Summary**
+<!-- {{ read_csv('docs/products/DHPS/summary.csv') }} -->
 
-**Curent Version** : 3.1.0
+** Current version: ** 3.1.0
 <br>
-**Past Versions** : NA
+** Past versions: **
 
-## **Product Summary**
-
-{{ read_csv('docs/products/DHPS/summary.csv') }}
+* [1.0](./path/to/old_version.md)
+* [2.0](../../license/license.md)
 
 ## **Domain** 
 
@@ -43,7 +50,7 @@ DHPS also estimates the water budget of large specified water bodies, which incl
 <li> Great Slave Lake </li>
 <li> Great Bear Lake </li>
 
-![alt text](../NSRPS/NSRPS_domain.png "Title")
+![alt text](../NSRPS/NSRPS_domain.png)
 
 ## **System Description**
 
@@ -51,21 +58,30 @@ DHPS also estimates the water budget of large specified water bodies, which incl
 
 DHPS both analyses and forecasts, routing water from CaLDAS-Sat and HRDLPS, respectively, through a river basin’s lakes and 
 rivers at a 1-km grid resolution. It simulates lake levels for defined lakes or reservoirs and streamflow for all other points 
-throughout the domain. DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
-DHPS is forced with CaLDAS-Sat for the assimilation phase, and with HRDLPS for the forecast phase. 
+throughout the domain.  Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast 
+
+<br>
+<br>
+
+DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
 DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
 observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
 <br>
-</p>
 
-### **Products**
-<p>
-DHPS produces analyses in near real-time and forecasts over the next six days. From the 
-analyses and forecasts, DHPS provides hourly estimates of river discharge, the volume of water 
-stored in the river channel or at the outlet of an explicitly represented natural lake or regulated 
-reservoir, and the depth of the water in the subterranean reservoir. DHPS also 
-provides analyses and forecasts of precipitation, evaporation and terrestrial runoff averaged 
-over the surface of specified large lakes during successive 12-hour periods.
+<details>
+<summary>Outputs </summary>
+DHPS produces analyses in near real-time and forecasts over the next six days. From the analyses and forecasts, DHPS
+provides hourly estimates of:
+<li> River discharge and;</li>
+<li> The volume of water stored in the river channel or at the outlet of an explicitly represented natural lake or regulated reservoir </li>
+<br>
+DHPS also provides analyses and forecasts of some variables  averaged 
+over the surface of specified large lakes (listed above) during successive 12-hour periods:
+<li>precipitation </li>
+<li>Evaporation </li>
+<li>Terrestrial runoff </li>
+* [1.0](./path/to/old_version.md)
+</details>
 </p>
 
 ## **Data Access** 
@@ -93,5 +109,3 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 ** [Glossary](../../additional_information/glossary/glossary.md ) **
 <br>
 ** [Change log](../Status_definitions/status.md) **
-
-

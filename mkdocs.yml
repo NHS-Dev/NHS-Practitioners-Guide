@@ -7,8 +7,8 @@ site_description: National Hydrological Service Pracititioners guide
 #required libraries 
 # mkdocs
 # mkdocs-material
-# mkdocs-table-reader-plugin
-
+# mkdocs-table-reader-plugin: 
+# tags : pip install git+https://github.com/jldiaz/mkdocs-plugin-tags.git
 remote_name: origin
 
 nav: 
@@ -36,12 +36,14 @@ theme:
 plugins:
     - search 
     - table-reader
+    - tags
     
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true 
   - tables
+  - meta
     
 extra:
     generator: false

@@ -4,6 +4,11 @@ site_description: National Hydrological Service Pracititioners guide
 
 # name of the remote set in your fork where the documentation will actually be deployed
 # validate value with `git remote -v`, it must be pointing to https://github.com/NHS-Dev/NHS-Practitioners-Guide.git
+#required libraries 
+# mkdocs
+# mkdocs-material
+# mkdocs-table-reader-plugin: 
+# tags : pip install git+https://github.com/jldiaz/mkdocs-plugin-tags.git
 remote_name: origin
 
 nav: 
@@ -21,9 +26,6 @@ nav:
         - Example page: usage_and_tutorials/test.md
 theme: 
     name: material
-    # highlightjs: true 
-    # prev_next_buttons_location: none
-    # Titles_only: True
     palette:
         primary: blue grey
     favicon: assets/favicon.png
@@ -31,16 +33,17 @@ theme:
         - navigation.tabs
         - content.tabs.link
         - navigation.top
-
 plugins:
     - search 
     - table-reader
+    - tags
     
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true 
   - tables
+  -meta
     
 extra:
     generator: false
