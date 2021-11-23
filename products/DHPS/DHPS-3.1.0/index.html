@@ -400,20 +400,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#version-summary" class="md-nav__link">
-    Version Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#product-summary" class="md-nav__link">
-    Product Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#domain" class="md-nav__link">
     Domain
   </a>
@@ -424,19 +410,6 @@
   <a href="#system-description" class="md-nav__link">
     System Description
   </a>
-  
-    <nav class="md-nav" aria-label="System Description">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#products" class="md-nav__link">
-    Products
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -664,20 +637,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#version-summary" class="md-nav__link">
-    Version Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#product-summary" class="md-nav__link">
-    Product Summary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#domain" class="md-nav__link">
     Domain
   </a>
@@ -688,19 +647,6 @@
   <a href="#system-description" class="md-nav__link">
     System Description
   </a>
-  
-    <nav class="md-nav" aria-label="System Description">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#products" class="md-nav__link">
-    Products
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -756,49 +702,20 @@ does not add or remove water to or from the outputs of the surface model.
 
 </p>
 
-<h2 id="version-summary"><strong>Version Summary</strong></h2>
-<p><strong>Curent Version</strong> : 3.1.0
+<!--| Attribute           | Description              |
+|:--------------------|:-------------------------|
+| Product Type        | Forecast                 |
+| Temporal Resolution | Hourly                   |
+| Frequency           | 2x / day at 00 and 12 UT |
+| Lead-time           | 6 days (144 hrs)         | -->
+
+<p><strong> Current version: </strong> 3.1.0
 <br>
-<strong>Past Versions</strong> : NA</p>
-<h2 id="product-summary"><strong>Product Summary</strong></h2>
-<table>
-<thead>
-<tr>
-<th align="left">Attribute</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Purpose</td>
-<td align="left">Flow analyses and predictions</td>
-</tr>
-<tr>
-<td align="left">Spatial Domain</td>
-<td align="left">6 major basins in Canada</td>
-</tr>
-<tr>
-<td align="left">Spatial Resolution</td>
-<td align="left">1-km grid</td>
-</tr>
-<tr>
-<td align="left">Temporal Resolutio</td>
-<td align="left">Hourly</td>
-</tr>
-<tr>
-<td align="left">Frequency</td>
-<td align="left">2x / day at 00 and 12 UT</td>
-</tr>
-<tr>
-<td align="left">Lead-time</td>
-<td align="left">6 days (144 hrs)</td>
-</tr>
-<tr>
-<td align="left">Current version</td>
-<td align="left">3.1.0</td>
-</tr>
-</tbody>
-</table>
+<strong> Past versions: </strong></p>
+<ul>
+<li><a href="./path/to/old_version.md">1.0</a></li>
+<li><a href="../../../license/license/">2.0</a></li>
+</ul>
 <h2 id="domain"><strong>Domain</strong></h2>
 <p> 
 Outputs from DHPS are currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada.
@@ -820,27 +737,36 @@ DHPS is currently established in the following basins:
 <li> Great Slave Lake </li>
 <li> Great Bear Lake </li>
 
-<p><img alt="alt text" src="../../NSRPS/NSRPS_domain.png" title="Title" /></p>
+<p><img alt="alt text" src="../../NSRPS/NSRPS_domain.png" /></p>
 <h2 id="system-description"><strong>System Description</strong></h2>
 <p>
 
 DHPS both analyses and forecasts, routing water from CaLDAS-Sat and HRDLPS, respectively, through a river basin’s lakes and 
 rivers at a 1-km grid resolution. It simulates lake levels for defined lakes or reservoirs and streamflow for all other points 
-throughout the domain. DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
-DHPS is forced with CaLDAS-Sat for the assimilation phase, and with HRDLPS for the forecast phase. 
+throughout the domain.  Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast 
+
+<br>
+<br>
+
+DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
 DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
 observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
 <br>
-</p>
 
-<h3 id="products"><strong>Products</strong></h3>
-<p>
-DHPS produces analyses in near real-time and forecasts over the next six days. From the 
-analyses and forecasts, DHPS provides hourly estimates of river discharge, the volume of water 
-stored in the river channel or at the outlet of an explicitly represented natural lake or regulated 
-reservoir, and the depth of the water in the subterranean reservoir. DHPS also 
-provides analyses and forecasts of precipitation, evaporation and terrestrial runoff averaged 
-over the surface of specified large lakes during successive 12-hour periods.
+<details>
+<summary>Outputs </summary>
+DHPS produces analyses in near real-time and forecasts over the next six days. From the analyses and forecasts, DHPS
+provides hourly estimates of:
+<li> River discharge and;</li>
+<li> The volume of water stored in the river channel or at the outlet of an explicitly represented natural lake or regulated reservoir </li>
+<br>
+DHPS also provides analyses and forecasts of some variables  averaged 
+over the surface of specified large lakes (listed above) during successive 12-hour periods:
+<li>precipitation </li>
+<li>Evaporation </li>
+<li>Terrestrial runoff </li>
+* [1.0](./path/to/old_version.md)
+</details>
 </p>
 
 <h2 id="data-access"><strong>Data Access</strong></h2>
@@ -859,6 +785,8 @@ over the surface of specified large lakes during successive 12-hour periods.
 <strong> <a href="../../../additional_information/glossary/glossary/">Glossary</a> </strong>
 <br>
 <strong> <a href="../Status_definitions/status.md">Change log</a> </strong></p>
+                
+                  
                 
               
               
