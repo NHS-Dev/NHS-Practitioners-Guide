@@ -1,6 +1,0 @@
-Attribute,Description
-Product type,Forecast
-Temporal Resolution,Hourly
-Frequency,2x / day at 00 and 12 UT
-Lead-time,nan
-Current version,3.1.0
