@@ -16,14 +16,15 @@ tags:
 </p>
 
 * summary table -- see summary.csv for example template 
-<!-- {{ read_csv('docs/products/path/to/summary.csv') }} -->
+<!-- {{ read_csv('<!-- {{ read_csv('docs/products/PRODUCT/summary-table/summary.csv') }} -->
+
 
 ** Current version: ** x.x.x
 <br>
 ** Past versions: **
 
-* [x.x](./path/to/old_version.md)
-* [x.x](../../license/license.md)
+* [x.x](./previous_versions/old_version.md)
+* [x.x](./previous_versions/old_version.md)
 
 
 ## **Product Summary**
@@ -39,7 +40,7 @@ tags:
 </p>
 
 *insert image of domain -- if available 
-![alt text](domain.png "Title")
+![alt text](domain-images/domain.png)
 
 ## **System Components**
 <p>
@@ -69,7 +70,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ## **Additional information**
 
-** [Technical note](./path/to/doc) **
+** [Technical note](documentation/documentation-name) **
 <br>
 ** [Specifications](./) **
 <br> 

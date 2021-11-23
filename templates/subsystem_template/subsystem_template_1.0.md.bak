@@ -34,7 +34,7 @@ tags:
 </p>
 
 *insert image of domain -- if available 
-![alt text](domain.png "Title")
+![alt text](domain-images/domain.png)
 
 ## **System Description**
 <p>
@@ -50,7 +50,9 @@ drop-down menu for outputs:
 
 ## **Data Access**
 
+<p>
 *data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) * 
+</p>
 
 ## **License**
 
@@ -65,7 +67,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ## **Additional Information**
 
-** [Technical note](./path/to/doc) **
+** [Technical note](documentation/documentation-name) **
 <br>
 ** [Specifications](./) **
 <br> 

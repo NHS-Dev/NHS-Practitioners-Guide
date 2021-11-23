@@ -3,6 +3,7 @@ title: DHPS
 tags: 
 - Hydrology
 - Discharge
+- Real-time forecast 
 ---
 
 # **Deterministic Hydrologic Prediction System (DHPS)**
@@ -18,7 +19,7 @@ does not add or remove water to or from the outputs of the surface model.
 
 </p> 
 
-<!-- {{ read_csv('docs/products/DHPS/summary.csv') }} -->
+<!-- {{ read_csv('docs/products/DHPS/summary-table/summary.csv') }} -->
 
 ** Current version: ** 3.1.0
 <br>
@@ -49,7 +50,7 @@ DHPS also estimates the water budget of large specified water bodies, which incl
 <li> Great Slave Lake </li>
 <li> Great Bear Lake </li>
 
-![alt text](../NSRPS/NSRPS_domain.png)
+![alt text](domain-images/NSRPS_domain.png)
 
 ## **System Description**
 
@@ -79,7 +80,6 @@ over the surface of specified large lakes (listed above) during successive 12-ho
 <li>precipitation </li>
 <li>Evaporation </li>
 <li>Terrestrial runoff </li>
-* [1.0](./path/to/old_version.md)
 </details>
 </p>
 
@@ -101,7 +101,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ## **Additional Information**
 
-** [Technical note](./Tech_note_dhps_v310_e_Final_20210915.pdf) **
+** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
 <br>
 ** [Specifications](./) **
 <br> 

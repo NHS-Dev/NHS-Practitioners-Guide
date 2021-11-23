@@ -13,7 +13,7 @@ tags:
 <p> NSRPS is a Complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current 
 and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. </P>
 
-<!-- {{ read_csv('docs/products/DHPS/summary.csv') }} -->
+<!-- {{ read_csv('docs/products/NSRPS/summary-table/summary.csv') }} -->
 
 ** Current version: ** 3.1.0
 <br>
@@ -37,7 +37,7 @@ NSRPS is currently established in the following basins:
 </ul> 
 </p>
 
-![alt text](NSRPS_domain.png "Title")
+![alt text](domain-images/NSRPS_domain.png "Title")
 
  <p> As NSRPS is composed of different sub-systems, both the domain and spatial resolution vary based on the which sub-system the output is derived. </p>
  
@@ -76,7 +76,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
  
 ## **Additional Information**
 
-** [Technical note](./Tech_note_dhps_v310_e_Final_20210915.pdf) **
+** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
 <br>
 ** [Specifications](./) **
 <br> 

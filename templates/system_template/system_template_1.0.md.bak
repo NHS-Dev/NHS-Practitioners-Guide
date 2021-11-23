@@ -16,7 +16,8 @@ tags:
 </p>
 
 * summary table -- see summary.csv for example template 
-<!-- {{ read_csv('docs/products/path/to/summary.csv') }} -->
+<!-- {{ read_csv('summary-table/summary.csv') }} -->
+
 
 ** Current version: ** x.x.x
 <br>
@@ -39,18 +40,21 @@ tags:
 </p>
 
 *insert image of domain -- if available 
-![alt text](domain.png "Title")
+![alt text](domain-images/domain.png)
 
 ## **System Components**
-
+<p>
 *description of system and components*
-
+</p>
 * [Component 1)](./path/to/old_version.md)
 * [Component 12)](./path/to/old_version.md)
 
 ## **Data Access**
 
-*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) *  elaborate on what we mean.  Also, I see HTML tags (e.g., <p> <br> ) in the other versions, do we include info on that here?
+<p>
+*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) *  
+</p>
+
 
 ## **License**
 
@@ -66,7 +70,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ## **Additional information**
 
-** [Technical note](./path/to/doc) **
+** [Technical note](documentation/documentation-name) **
 <br>
 ** [Specifications](./) **
 <br> 
