@@ -55,8 +55,6 @@ NSRPS products are implemented at a 1-km resolution. The current outputs from NS
 </details>
 </p>
 
-
-
 ### **Data Access**
 
 *Currently NSPRS data is only available through ECCC's internal Science Network.*
@@ -78,5 +76,4 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 <br>
 ** [Specifications](./) **
 <!-- ** [Glossary](../../additional_information/glossary/glossary.md ) ** -->
-<br>
 ** [Change log](../Status_definitions/status.md) **

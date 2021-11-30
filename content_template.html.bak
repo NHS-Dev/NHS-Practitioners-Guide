@@ -103,7 +103,6 @@
 									<header class="major">
 										<h2>Menu</h2>
 									</header>
-									{%- if nav|length>1 or (page and (page.next_page or page.previous_page)) or config.repo_url %}
 									{%- block site_nav %}
 										<ul>
 										{%- if nav|length>1 %}
@@ -125,7 +124,6 @@
 										{%- endfor %}
 									{%- endif %}
 								{%- endblock %}
-								{%- endif %}									
 								</ul>
 								</nav>
 							<!-- Section -->
@@ -146,9 +144,8 @@
 								<footer id="footer">
 									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
-
 						</div>
-					</div>
+				</div>
 	</body>
 	
 		<!-- Scripts -->
