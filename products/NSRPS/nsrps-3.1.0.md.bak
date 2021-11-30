@@ -4,9 +4,9 @@ template: content_template.html
 ---
 
 
-# **National Surface and River Prediction System (NSRPS)**
+## **National Surface and River Prediction System (NSRPS)**
 
-## **Overview**
+### **Overview**
 
 <p> NSRPS is a Complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current 
 and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. </P>
@@ -15,13 +15,13 @@ and future states of the land surface, as well as the movement of water over and
 
 ** Current version: ** 3.1.0
 <br>
-<!-- ** Past versions: **
-
+** Past versions: **
+<!-- 
 * [1.0](./path/to/old_version.md)
-* [2.0](../../license/license.md) -->
+* [2.0](../../license/license.md)
+ -->
 
-
-## **Domain**
+### **Domain**
 
 <p>Discharge outputs from NSPRS are currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada.
 
@@ -39,7 +39,7 @@ NSRPS is currently established in the following basins:
 
  <p> As NSRPS is composed of different sub-systems, both the domain and spatial resolution vary based on the which sub-system the output is derived. </p>
  
-## **System Components**
+### **System Components**
 <p> NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
 High Resolution Deterministic Prediction System (HRDPS). The component systems of NSRPS include: </p>
 
@@ -57,27 +57,26 @@ NSRPS products are implemented at a 1-km resolution. The current outputs from NS
 
 
 
-## **Data Access**
+### **Data Access**
 
 *Currently NSPRS data is only available through ECCC's internal Science Network.*
 
-## **License**
+### **License**
 
 The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
 
 
-## **Status**
+### **Status**
 
 **Current Status**: Experimental
 <br>
 *click [here](../Status_definitions/status.md) for descriptions of different operational statuses*
  
-## **Additional Information**
+### **Additional Information**
 
 ** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
 <br>
 ** [Specifications](./) **
-<br> 
-** [Glossary](../../additional_information/glossary/glossary.md ) **
+<!-- ** [Glossary](../../additional_information/glossary/glossary.md ) ** -->
 <br>
 ** [Change log](../Status_definitions/status.md) **

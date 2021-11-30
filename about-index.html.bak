@@ -31,9 +31,11 @@
 								</header>
 
 							<!-- Content -->
-								<section id="banner">
-									<div class="content">
+								<section>
+									<header class="main">
+										<div id="container">
 										<!-- Markdown content -->
+													<!-- Markdown content -->
 									{% block content %}
 										{{ page.content }}
 
@@ -46,17 +48,41 @@
 										  {% endif %}
 										{% endif %}
 								  {% endblock %}
-								  
-								<ul class="actions">
-									<li><a href="./about" class="button big">Learn More</a></li>
-								</ul>
-								</div>
-								<span class="image object">
-									<img src="images/systems_overview.JPG" alt="" />
-								</span>
-							</section>
-
-					<!-- Section -->
+								</section>
+						
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Additional information</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Available data</h3>
+											<p>Learn more about available datasets</p>
+											<ul class="actions">
+												<li><a href="./../landing" class="button">Learn more</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Tutorials</h3>
+											<p> Tutorial on data use</p>
+											<ul class="actions">
+												<li><a href="./../../tutorials" class="button">Learn more</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Accessing Data </h3>
+											<p>how to access data products</p>
+											<ul class="actions">
+												<li><a href="./../../tutorials" class="button">Learn more</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+						<!-- Section -->
 						<section>
 							<header class="major">
 								<h2>Highlighted Products</h2>
@@ -104,9 +130,8 @@
 								</article>
 							</div>
 						</section>
-
-				</div>
-			</div>
+					</div>
+				</div>				
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
@@ -117,9 +142,7 @@
 										<input type="text" name="query" id="query" placeholder="Search" />
 									</form>
 								</section>
-
 							<!-- Menu -->
-
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
@@ -138,7 +161,7 @@
 													{%- endfor %}
 													</ul>
 													</li>
-												{%- else %}
+													{%- else %}
 													<li>
 														<a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
 													</li>
@@ -147,10 +170,9 @@
 									{%- endif %}
 								{%- endblock %}
 								{%- endif %}									
-	
 								</ul>
 								</nav>
-								<!-- section -->
+							<!-- Section -->
 								<section>
 									<header class="major">
 										<h2>Get in touch</h2>
@@ -164,12 +186,15 @@
 									</ul>
 								</section>
 
-							<!-- footer -->
+							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
-							</div>
+
+						</div>
 					</div>
+
+			</div>
 	</body>
 	
 		<!-- Scripts -->
@@ -179,5 +204,9 @@
 		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/util.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/lunr.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/worker.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/search_index.json'|url }}" defer></script>
 	{%- endblock %}
 </html>
