@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
         <title>NSRPS - National Hydrological Service Practitioners Guide</title>
@@ -11,7 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
 		<link rel="stylesheet" href="../../../css/main.css" />
-	
+	<!-- Meta tags -->
+    
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
 	<!-- Favicon -->
       <link rel="icon" href="../../../assets/favicon.png" />
 
@@ -33,9 +31,7 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<div id="container">
 										<!-- Markdown content -->
-													<!-- Markdown content -->
 									
 										<h2 id="deterministic-hydrologic-prediction-system-dhps"><strong>Deterministic Hydrologic Prediction System (DHPS)</strong></h2>
 <h3 id="overview"><strong>Overview</strong></h3>
@@ -48,7 +44,22 @@ does not add or remove water to or from the outputs of the surface model.
 
 </p>
 
-<!-- {{ read_csv('docs/products/DHPS/summary-table/summary.csv') }} -->
+<p>
+
+DHPS both analyses and forecasts, routing water from CaLDAS-Sat and HRDLPS, respectively, through a river basin’s lakes and 
+rivers at a 1-km grid resolution. It simulates lake levels for defined lakes or reservoirs and streamflow for all other points 
+throughout the domain.   
+
+<br>
+
+DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
+DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
+observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
+
+
+<br>
+
+</p>
 
 <p><strong> Current version: </strong> 3.1.0
 <br>
@@ -57,7 +68,7 @@ does not add or remove water to or from the outputs of the surface model.
 <li><a href="./previous_versions/old_version.md">x.x</a></li>
 <li><a href="./previous_versions/old_version.md">x.x</a></li>
 </ul>
-<h3 id="domain"><strong>Domain</strong></h3>
+<h2 id="what-is-the-spatial-resolution-and-coverage-of-this-data"><strong>What is the spatial resolution and coverage of this data?</strong></h2>
 <p> 
 Outputs from DHPS are currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada.
 
@@ -79,21 +90,9 @@ DHPS is currently established in the following basins:
 <li> Great Bear Lake </li>
 
 <p><img alt="alt text" src="../domain-images/NSRPS_domain.png" /></p>
-<h3 id="system-description"><strong>System Description</strong></h3>
-<p>
-
-DHPS both analyses and forecasts, routing water from CaLDAS-Sat and HRDLPS, respectively, through a river basin’s lakes and 
-rivers at a 1-km grid resolution. It simulates lake levels for defined lakes or reservoirs and streamflow for all other points 
-throughout the domain.  Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast 
-
-<br>
-<br>
-
-DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
-DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
-observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
-<br>
-
+<h2 id="what-is-the-timestep-and-time-period-covered-by-this-data"><strong>What is the timestep and time period covered by this data?</strong></h2>
+<p>Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast </p>
+<h2 id="what-are-the-outputs-from-this-product"><strong>What are the outputs from this product?</strong></h2>
 <details>
 <summary>Outputs </summary>
 DHPS produces analyses in near real-time and forecasts over the next six days. From the analyses and forecasts, DHPS
@@ -108,41 +107,35 @@ over the surface of specified large lakes (listed above) during successive 12-ho
 <li>Terrestrial runoff </li>
 </details>
 </p>
-
-<h3 id="data-access"><strong>Data Access</strong></h3>
+<h2 id="how-do-i-access-the-data"><strong>How do I access the data?</strong></h2>
 <p><em>Currently DHPS data is only available through ECCC's internal Science Network.</em></p>
 <h3 id="license"><strong>License</strong></h3>
 <p>The <a href="../../../license/license/">End-User Licence for Environment and Climate Change Canada's Data Servers</a> specifies the conditions of use of this data.</p>
-<h3 id="status"><strong>Status</strong></h3>
+<h2 id="what-is-the-status-of-this-product"><strong>What is the status of this product?</strong></h2>
 <p><strong>Current Status</strong>: Experimental
 <br>
 <em>click <a href="../Status_definitions/status.md">here</a> for descriptions of different operational statuses</em></p>
-<h3 id="additional-information"><strong>Additional Information</strong></h3>
+<h2 id="where-can-i-find-additional-information"><strong>Where can I find additional information?</strong></h2>
 <p><strong> <a href="../documentation/Tech_note_dhps_v310_e_Final_20210915.pdf">Technical note</a> </strong>
 <br>
 <strong> <a href="./">Specifications</a> </strong>
-<br> 
-<strong> <a href="../../../additional_information/glossary/glossary/">Glossary</a> </strong>
 <br>
 <strong> <a href="../Status_definitions/status.md">Change log</a> </strong></p>
-
-										Last update of source file
-										
-										  
-										
-								  
+<h3 id="license_1"><strong>License</strong></h3>
+<p>The <a href="../../../license/license/">End-User Licence for Environment and Climate Change Canada's Data Servers</a> specifies the conditions of use of this data.</p>
+									
 								</section>
 						
 								<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Additional information</h2>
+										<h2>Additional Resources</h2>
 									</header>
 									<div class="posts">
 										<article>
 											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<h3>Glossary</h3>
-											<p></p>
+											<p>Learn common terms used within this guide</p>
 											<ul class="actions">
 												<li><a href="./../../glossary" class="button">Learn more</a></li>
 											</ul>
@@ -150,21 +143,24 @@ over the surface of specified large lakes (listed above) during successive 12-ho
 										<article>
 											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 											<h3>Tutorials</h3>
-											<p> Tutorial on data use</p>
+											<p> Discover tutorials and ways to use data</p>
 											<ul class="actions">
 												<li><a href="./../../tutorials" class="button">Learn more</a></li>
 											</ul>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Accessing Data </h3>
-											<p>how to access data products</p>
+											<h3>Accessing Data</h3>
+											<p>Learn how to access CMC products</p>
 											<ul class="actions">
 												<li><a href="./../../tutorials" class="button">Learn more</a></li>
 											</ul>
 										</article>
 									</div>
 								</section>
+								<section> 
+									<header class="major">
+										<h2>Frequently Asked Questions</h2>
 								</div>
 							</div>
 						<!-- Section -->
@@ -174,12 +170,11 @@ over the surface of specified large lakes (listed above) during successive 12-ho
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+							<!-- Search --><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="query" placeholder="Search" title="Type search term here" />
+  </form>
+</div>
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -194,7 +189,7 @@ over the surface of specified large lakes (listed above) during successive 12-ho
 														<a href="../../../about/" class="nav-link">About</a>
 													</li>
 													<li>
-														<a href="../../../landing/" class="nav-link">Available Data</a>
+														<a href="../../../available-datasets/" class="nav-link">Available Data</a>
 													</li>
 													<li>
 														<a href="../../../data_access/data_access.md" class="nav-link">Data Access</a>
@@ -227,11 +222,10 @@ over the surface of specified large lakes (listed above) during successive 12-ho
 								</section>
 
 							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-						</div>
-				</div>
+				<footer id="footer">
+					<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+		</div>
 	</body>
 	
 		<!-- Scripts -->	

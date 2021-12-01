@@ -1,7 +1,9 @@
+{% extends "about-template.html" %}
+
 <h1 id="search">Search Results</h1>
 
 <form action="search.html">
-  <input name="q" id="mkdocs-search-query" type="text" >
+	<input type="text" name="q" id="mkdocs-search-query" placeholder="Search" />
 </form>
 
 <div id="mkdocs-search-results">

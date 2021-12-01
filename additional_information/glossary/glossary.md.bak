@@ -1,6 +1,8 @@
 ---
-templates: content_template.html
+title: Glossary
+template: content_template.html
 ---
+
 
 # Glossary
 

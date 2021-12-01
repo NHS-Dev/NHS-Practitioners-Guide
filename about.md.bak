@@ -1,6 +1,9 @@
 ---
 title: About
-template: content_template.html
+template: about-template.html
+tags:
+	- about
+	- documentation
 ---
 ## About the NHS Practitioner's Guide  
 

@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+NHS Pracitioner's guide 
+
+! Datasets landing page 
+
 -->
 <html>
 	<head>
@@ -14,6 +15,14 @@
 	{% block styles %}
 		<link rel="stylesheet" href="{{ 'css/main.css' | url }}" />
 	{%- endblock %}
+	<!-- Meta tags -->
+    {% block site_meta %}
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+	{%- endblock %}
+	
+	<!-- Favicon -->
+      <link rel="icon" href="{{ config.theme.favicon | url }}" />
 
 	</head>
 	<body class="is-preload">
@@ -34,51 +43,51 @@
 								<section>
 									<header class="main">
 										<div id="container">
-										<!-- Markdown content -->
-													<!-- Markdown content -->
+									<!-- Markdown content -->
 									{% block content %}
 										{{ page.content }}
-
-										Last update of source file
-										{% if page and page.meta %}
-										  {% if page.meta.git_revision_date_localized or
-												page.meta.revision_date
-										  %}
-											{% include "source-file.html" %}
-										  {% endif %}
-										{% endif %}
-								  {% endblock %}
+									{% endblock %}
+								</div>
 								</section>
 						
 								<!-- Section -->
 								<section>
-									<header class="major">
-										<h2>Additional information</h2>
-									</header>
 									<div class="posts">
 										<article>
 											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Glossary</h3>
-											<p></p>
-											<ul class="actions">
-												<li><a href="./../../glossary" class="button">Learn more</a></li>
-											</ul>
+											<h3>Forecast Data</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="./../../products/NSRPS/"> product page 1</a></li>
+													<li> <a href="#"> product page 2</a></li>
+													<li> <a href="#"> product page 3</a></li>
+												</ul>
+
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Tutorials</h3>
-											<p> Tutorial on data use</p>
-											<ul class="actions">
-												<li><a href="./../../tutorials" class="button">Learn more</a></li>
-											</ul>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Analysis and Re-analysis Data</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="#"> product page 1</a></li>
+													<li> <a href="#"> product page 2</a></li>
+													<li> <a href="#"> product page 3</a></li>
+												</ul>
+
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Accessing Data </h3>
-											<p>how to access data products</p>
-											<ul class="actions">
-												<li><a href="./../../tutorials" class="button">Learn more</a></li>
-											</ul>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Data Access</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="#"> tutorial page 1</a></li>
+													<li> <a href="#"> tutorial page 2</a></li>
+													<li> <a href="#"> tutorial page 3</a></li>
+												</ul>
+
 										</article>
 									</div>
 								</section>
@@ -92,11 +101,9 @@
 						<div class="inner">
 
 							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+								  {%- block search_button %}
+									{%- if 'search' in config['plugins'] %}{%- include "searchbox.html" %}{%- endif %}
+								  {%- endblock %}
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -126,7 +133,7 @@
 								{%- endblock %}
 								</ul>
 								</nav>
-							<!-- Section -->
+								<!-- section -->
 								<section>
 									<header class="major">
 										<h2>Get in touch</h2>
@@ -140,13 +147,14 @@
 									</ul>
 								</section>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-						</div>
-				</div>
+							<!-- footer -->
+				`<footer id="footer">
+					<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+			</div>
+		</div>
 	</body>
+	
 	
 		<!-- Scripts -->
 	{%- block libs %}	

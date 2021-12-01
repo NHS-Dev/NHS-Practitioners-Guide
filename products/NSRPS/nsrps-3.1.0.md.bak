@@ -1,8 +1,10 @@
 ---
 title: NSRPS
-template: content_template.html
+template: content-template.html
+tags: 
+- hydrology
+- disharge
 ---
-
 
 ## **National Surface and River Prediction System (NSRPS)**
 
@@ -21,7 +23,7 @@ and future states of the land surface, as well as the movement of water over and
 * [2.0](../../license/license.md)
  -->
 
-### **Domain**
+## **What is the spatial resolution and coverage of this data?**
 
 <p>Discharge outputs from NSPRS are currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada.
 
@@ -39,7 +41,12 @@ NSRPS is currently established in the following basins:
 
  <p> As NSRPS is composed of different sub-systems, both the domain and spatial resolution vary based on the which sub-system the output is derived. </p>
  
-### **System Components**
+ ## **What is the timestep and time period covered by this data?**
+ 
+ 
+ ## **What are the outputs from this product?**
+ 
+## **System sub-components**
 <p> NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
 High Resolution Deterministic Prediction System (HRDPS). The component systems of NSRPS include: </p>
 
@@ -55,25 +62,26 @@ NSRPS products are implemented at a 1-km resolution. The current outputs from NS
 </details>
 </p>
 
-### **Data Access**
+## **How do I access the data?**
 
 *Currently NSPRS data is only available through ECCC's internal Science Network.*
+
+## **What is the status of this product?** 
+
+**Current Status**: Experimental
+<br>
+*click [here](../Status_definitions/status.md) for descriptions of different operational statuses*
+ 
+## **Where can I find additional information?**
+
+** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
+<br>
+** [Specifications](./) **
+<br>
+** [Change log](../Status_definitions/status.md) **
 
 ### **License**
 
 The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
 
 
-### **Status**
-
-**Current Status**: Experimental
-<br>
-*click [here](../Status_definitions/status.md) for descriptions of different operational statuses*
- 
-### **Additional Information**
-
-** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
-<br>
-** [Specifications](./) **
-<!-- ** [Glossary](../../additional_information/glossary/glossary.md ) ** -->
-** [Change log](../Status_definitions/status.md) **
