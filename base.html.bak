@@ -15,7 +15,6 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
 	{%- endblock %}
-	<script>var base_url = '{{ base_url }}';</script>
 	
 	<!-- Favicon -->
       <link rel="icon" href="{{ config.theme.favicon | url }}" />
@@ -53,7 +52,7 @@
 								  {% endblock %}
 								  
 								<ul class="actions">
-									<li><a href="{{ page.url |url }}> {{ page.title }}" class="button big">Learn More</a></li>
+									<li><a href="./about" class="button big">Learn More</a></li>
 								</ul>
 								</div>
 								<span class="image object">
@@ -73,7 +72,7 @@
 										<h3>National Surface and River Prediction System (NSRPS)</h3>
 										<p>A complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks.</p>
 								<ul class="actions">
-									<li><a href ="./products/NSRPS/nsrps-3.1.0", class="button big">Learn More</a></li>
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" , class="button big">Learn More</a></li>
 								</ul>
 									</div>
 								</article>
@@ -83,7 +82,7 @@
 										<h3>High Resolution Deterministic Precipitation Analysis (HRDPA)</h3>
 										<p>Produces an objective, best estimate of the amount of precipitation that occurred at the surface over recent past periods of 6 or 24 hours. Integrates data from in situ precipitation gauge measurements, weather radar and numerical weather prediction models.</p>
 								<ul class="actions">
-									<li><a href ="./products/HRPDA/HRDPA", class="button big">Learn More</a></li>
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" , class="button big">Learn More</a></li>
 								</ul>
 									</div>
 								</article>
@@ -93,7 +92,7 @@
 										<h3>Regional Deterministic Reforecast System (RDRS)</h3>
 										<p>Hourly, ~10-km resolution reanalysis for North America from 1980-2018 of the main meteorological variables that are required for land surface and hydrology applications.</p>
 								<ul class="actions">
-									<li><a href ="./products/RDRS/HRDPA", class="button big">Learn More</a></li>
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" ,class="button big">Learn More</a></li>
 								</ul>
 									</div>
 								</article>
@@ -103,7 +102,7 @@
 										<h3>CanSWE</h3>
 										<p>A coordinated database of snow observations, with a primary focus on snow water equivalent data, covering all provinces and territories. Updated annually with a robust, consistent set of quality control measures applied.</p>
 								<ul class="actions">
-									<li><a href ="./products/CANSWE/CANSWE", class="button big">Learn More</a></li>
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" ,class="button big">Learn More</a></li>
 								</ul>
 									</div>
 								</article>
@@ -119,9 +118,17 @@
 							<!-- Search -->
 							<section id="search" class="alt">
 							{% if 'search' in config['plugins'] %}
+							
+							<h1 id="search">Search Results</h1>
+			
+							
 									<form action="search.html">
 											<input type="text" name="q" id="mkdocs-search-query" placeholder="Search" />
 									</form>
+									<div id="mkdocs-search-results">
+										  Sorry, page not found.
+									</div>
+													
 							{% endif %}
 							</section>
 							<!-- Menu -->
@@ -176,6 +183,7 @@
 	
 		<!-- Scripts -->
 	{%- block libs %}	
+		<script>var base_url = '{{ base_url }}';</script>
 		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>

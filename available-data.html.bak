@@ -1,4 +1,10 @@
 <!DOCTYPE HTML>
+<!--
+NHS Pracitioner's guide 
+
+! Datasets landing page 
+
+-->
 <html>
 	<head>
 	{%- block htmltitle %}
@@ -14,6 +20,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
 	{%- endblock %}
+	
 	<!-- Favicon -->
       <link rel="icon" href="{{ config.theme.favicon | url }}" />
 
@@ -35,52 +42,55 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<!-- Markdown content -->
+										<div id="container">
+									<!-- Markdown content -->
 									{% block content %}
 										{{ page.content }}
 									{% endblock %}
+								</div>
 								</section>
-						
-								<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Additional Resources</h2>
-									</header>
+
 									<div class="posts">
 										<article>
 											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Glossary</h3>
-											<p>Learn common terms used within this guide</p>
-											<ul class="actions">
-												<li><a href="{{ './additional_information/glossary/glossary' |url }}" , class="button">Learn more</a></li>
-											</ul>
+											<h3>Forecast Data</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="./../../products/NSRPS/"> product page 1</a></li>
+													<li> <a href="#"> product page 2</a></li>
+													<li> <a href="#"> product page 3</a></li>
+												</ul>
+
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Tutorials</h3>
-											<p> Discover tutorials and ways to use data</p>
-											<ul class="actions">
-												<li><a href="{{ './additional_information/usage_and_tutorials/usage_and_tutorials |url }}" ,class="button">Learn more</a></li>
-											</ul>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Analysis and Re-analysis Data</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="#"> product page 1</a></li>
+													<li> <a href="#"> product page 2</a></li>
+													<li> <a href="#"> product page 3</a></li>
+												</ul>
+
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Accessing Data</h3>
-											<p>Learn how to access CMC products</p>
-											<ul class="actions">
-												<li><a href="{{ './additional_information/usage_and_tutorials/usage_and_tutorials |url }}" ,class="button">Learn more</a></li>
-											</ul>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Data Access</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="#"> tutorial page 1</a></li>
+													<li> <a href="#"> tutorial page 2</a></li>
+													<li> <a href="#"> tutorial page 3</a></li>
+												</ul>
+
 										</article>
 									</div>
 								</section>
-								<section> 
-									<header class="major">
-										<h2>Frequently Asked Questions</h2>
 								</div>
-							</div>
-						<!-- Section -->
-							
-							
+							</div>					
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
@@ -93,7 +103,6 @@
 									</form>
 							{% endif %}
 							</section>
-
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
@@ -122,7 +131,7 @@
 								{%- endblock %}
 								</ul>
 								</nav>
-							<!-- Section -->
+								<!-- section -->
 								<section>
 									<header class="major">
 										<h2>Get in touch</h2>
@@ -136,20 +145,25 @@
 									</ul>
 								</section>
 
-							<!-- Footer -->
-				<footer id="footer">
+							<!-- footer -->
+				`<footer id="footer">
 					<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 				</footer>
+			</div>
 		</div>
 	</body>
 	
+	
 		<!-- Scripts -->
 	{%- block libs %}	
-		<script>var base_url = '{{ base_url }}';</script>
 		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/util.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/lunr.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/worker.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/search_index.json'|url }}" defer></script>
 	{%- endblock %}
 </html>
