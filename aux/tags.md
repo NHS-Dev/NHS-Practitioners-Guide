@@ -8,7 +8,12 @@ title: Tags
 
 ## <span class="tag">Discharge</span>
 
-  * [DHPS](products/DHPS/DHPS-3.1.0.md)
+  * [NSRPS](products/DHPS/DHPS-3.1.0.md)
+
+ 
+
+
+## <span class="tag">disharge</span>
 
   * [NSRPS](products/NSRPS/nsrps-3.1.0.md)
 
@@ -17,7 +22,12 @@ title: Tags
 
 ## <span class="tag">Hydrology</span>
 
-  * [DHPS](products/DHPS/DHPS-3.1.0.md)
+  * [NSRPS](products/DHPS/DHPS-3.1.0.md)
+
+ 
+
+
+## <span class="tag">hydrology</span>
 
   * [NSRPS](products/NSRPS/nsrps-3.1.0.md)
 
@@ -26,6 +36,6 @@ title: Tags
 
 ## <span class="tag">Real-time forecast</span>
 
-  * [DHPS](products/DHPS/DHPS-3.1.0.md)
+  * [NSRPS](products/DHPS/DHPS-3.1.0.md)
 
  

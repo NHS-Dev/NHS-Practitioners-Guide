@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	{%- block htmltitle %}
+        <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+	{%- endblock %}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	{% block styles %}
+		<link rel="stylesheet" href="{{ 'css/main.css' | url }}" />
+	{%- endblock %}
+	    <!-- Meta tags -->
+    {% block site_meta %}
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+	{%- endblock %}
+	
+	<!-- Favicon -->
+      <link rel="icon" href="{{ config.theme.favicon | url }}" />
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+								</header>
+
+							<!-- Content -->
+								<section id="banner">
+									<div class="content">
+										<!-- Markdown content -->
+									{% block content %}
+										{{ page.content }}
+
+										Last update of source file
+										{% if page and page.meta %}
+										  {% if page.meta.git_revision_date_localized or
+												page.meta.revision_date
+										  %}
+											{% include "source-file.html" %}
+										  {% endif %}
+										{% endif %}
+								  {% endblock %}
+								  
+								<ul class="actions">
+									<li><a href="./about" class="button big">Learn More</a></li>
+								</ul>
+								</div>
+								<span class="image object">
+									<img src="images/systems_overview.JPG" alt="" />
+								</span>
+							</section>
+
+					<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>Highlighted Products</h2>
+							</header>
+							<div class="posts">
+								<article>
+									<div class="content">
+										<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+										<h3>National Surface and River Prediction System (NSRPS)</h3>
+										<p>A complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks.</p>
+								<ul class="actions">
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" , class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+								<article>
+									<div class="content">
+									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+										<h3>High Resolution Deterministic Precipitation Analysis (HRDPA)</h3>
+										<p>Produces an objective, best estimate of the amount of precipitation that occurred at the surface over recent past periods of 6 or 24 hours. Integrates data from in situ precipitation gauge measurements, weather radar and numerical weather prediction models.</p>
+								<ul class="actions">
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" , class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+								<article>
+									<div class="content">
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+										<h3>Regional Deterministic Reforecast System (RDRS)</h3>
+										<p>Hourly, ~10-km resolution reanalysis for North America from 1980-2018 of the main meteorological variables that are required for land surface and hydrology applications.</p>
+								<ul class="actions">
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" ,class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+								<article>
+									<div class="content">
+									<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+										<h3>CanSWE</h3>
+										<p>A coordinated database of snow observations, with a primary focus on snow water equivalent data, covering all provinces and territories. Updated annually with a robust, consistent set of quality control measures applied.</p>
+								<ul class="actions">
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" ,class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+							</div>
+						</section>
+
+				</div>
+			</div>
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+							<section id="search" class="alt">
+							{% if 'search' in config['plugins'] %}
+									<form action= "{{ 'search.html' |url }}">
+											<input type="text" name="q" id="mkdocs-search-query" placeholder="Search" />
+									</form>
+							{% endif %}
+							</section>
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									{%- block site_nav %}
+										<ul>
+										{%- if nav|length>1 %}
+											{%- for nav_item in nav %}
+												{%- if nav_item.children %}
+													<li>
+													<span class="opener">{{ nav_item.title }}</span>
+													<ul>
+													{%- for nav_item in nav_item.children %}
+														<a href="{{ nav_item.url|url }}" >{{ nav_item.title }}</a>
+													{%- endfor %}
+													</ul>
+													</li>
+													{%- else %}
+													<li>
+														<a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
+													</li>
+												{%- endif %}
+										{%- endfor %}
+									{%- endif %}
+								{%- endblock %}
+								</ul>
+								</nav>
+								<!-- section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+			</div>
+		</div>
+	</body>
+	
+		<!-- Scripts -->
+	{%- block libs %}	
+		<script>var base_url = '{{ base_url }}';</script>
+		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/util.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
+	{%- endblock %}
+</html>

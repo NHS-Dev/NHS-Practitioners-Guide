@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+NHS Pracitioner's guide 
+
+! Datasets landing page 
+
+-->
+<html>
+	<head>
+	{%- block htmltitle %}
+        <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+	{%- endblock %}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	{% block styles %}
+		<link rel="stylesheet" href="{{ 'css/main.css' | url }}" />
+	{%- endblock %}
+	<!-- Meta tags -->
+    {% block site_meta %}
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+	{%- endblock %}
+	
+	<!-- Favicon -->
+      <link rel="icon" href="{{ config.theme.favicon | url }}" />
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<div id="container">
+									<!-- Markdown content -->
+									{% block content %}
+										{{ page.content }}
+									{% endblock %}
+								</div>
+								</section>
+
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Forecast Data</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="./../../products/NSRPS/"> product page 1</a></li>
+													<li> <a href="#"> product page 2</a></li>
+													<li> <a href="#"> product page 3</a></li>
+												</ul>
+
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Analysis and Re-analysis Data</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="#"> product page 1</a></li>
+													<li> <a href="#"> product page 2</a></li>
+													<li> <a href="#"> product page 3</a></li>
+												</ul>
+
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Data Access</h3>
+											<div class="row">
+												<div class="col-6 col-12-small">
+												<ul class = "alt">
+													<li> <a href="#"> tutorial page 1</a></li>
+													<li> <a href="#"> tutorial page 2</a></li>
+													<li> <a href="#"> tutorial page 3</a></li>
+												</ul>
+
+										</article>
+									</div>
+								</section>
+								</div>
+							</div>					
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+							<section id="search" class="alt">
+							{% if 'search' in config['plugins'] %}
+									<form action="search.html">
+											<input type="text" name="q" id="mkdocs-search-query" placeholder="Search" />
+									</form>
+							{% endif %}
+							</section>
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									{%- block site_nav %}
+										<ul>
+										{%- if nav|length>1 %}
+											{%- for nav_item in nav %}
+												{%- if nav_item.children %}
+													<li>
+													<span class="opener">{{ nav_item.title }}</span>
+													<ul>
+													{%- for nav_item in nav_item.children %}
+														<a href="{{ nav_item.url|url }}" >{{ nav_item.title }}</a>
+													{%- endfor %}
+													</ul>
+													</li>
+													{%- else %}
+													<li>
+														<a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
+													</li>
+												{%- endif %}
+										{%- endfor %}
+									{%- endif %}
+								{%- endblock %}
+								</ul>
+								</nav>
+								<!-- section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- footer -->
+				`<footer id="footer">
+					<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+	
+	
+		<!-- Scripts -->
+	{%- block libs %}	
+		<script>var base_url = '{{ base_url }}';</script>
+		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/util.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
+	{%- endblock %}
+</html>

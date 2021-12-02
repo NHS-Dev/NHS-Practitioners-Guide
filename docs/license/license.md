@@ -1,3 +1,9 @@
+---
+title: License
+template: content-template.html
+---
+
+
 ![ECCC logo](../img_eccc-logo.png)
 
 # Environment and Climate Change Canada Data Servers End-use Licence

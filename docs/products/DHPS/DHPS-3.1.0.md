@@ -1,14 +1,15 @@
 ---
-title: DHPS
+title: NSRPS
+template: content-template.html
 tags: 
 - Hydrology
 - Discharge
 - Real-time forecast 
 ---
 
-# **Deterministic Hydrologic Prediction System (DHPS)**
+## **Deterministic Hydrologic Prediction System (DHPS)**
 
-## **Overview**
+### **Overview**
 
 <p>
 
@@ -19,7 +20,23 @@ does not add or remove water to or from the outputs of the surface model.
 
 </p> 
 
-<!-- {{ read_csv('docs/products/DHPS/summary-table/summary.csv') }} -->
+
+<p>
+
+DHPS both analyses and forecasts, routing water from CaLDAS-Sat and HRDLPS, respectively, through a river basin’s lakes and 
+rivers at a 1-km grid resolution. It simulates lake levels for defined lakes or reservoirs and streamflow for all other points 
+throughout the domain.   
+
+<br>
+
+DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
+DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
+observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
+
+
+<br>
+
+</p>
 
 ** Current version: ** 3.1.0
 <br>
@@ -28,7 +45,7 @@ does not add or remove water to or from the outputs of the surface model.
 * [x.x](./previous_versions/old_version.md)
 * [x.x](./previous_versions/old_version.md)
 
-## **Domain** 
+## **What is the spatial resolution and coverage of this data?**
 
 <p> 
 Outputs from DHPS are currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada.
@@ -52,21 +69,11 @@ DHPS also estimates the water budget of large specified water bodies, which incl
 
 ![alt text](domain-images/NSRPS_domain.png)
 
-## **System Description**
+## **What is the timestep and time period covered by this data?**
 
-<p>
+Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast 
 
-DHPS both analyses and forecasts, routing water from CaLDAS-Sat and HRDLPS, respectively, through a river basin’s lakes and 
-rivers at a 1-km grid resolution. It simulates lake levels for defined lakes or reservoirs and streamflow for all other points 
-throughout the domain.  Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast 
-
-<br>
-<br>
-
-DHPS is based on the Watroute routing scheme, and has the ability to represent reservoirs with a natural behavior as well as flow diversions.
-DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
-observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
-<br>
+## **What are the outputs from this product?**
 
 <details>
 <summary>Outputs </summary>
@@ -83,28 +90,30 @@ over the surface of specified large lakes (listed above) during successive 12-ho
 </details>
 </p>
 
-## **Data Access** 
+## **How do I access the data?**
 
 *Currently DHPS data is only available through ECCC's internal Science Network.*
 
-## **License**
+### **License**
 
 The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
 
 
-## **Status**
+## **What is the status of this product?** 
 
 **Current Status**: Experimental
 <br>
 *click [here](../Status_definitions/status.md) for descriptions of different operational statuses*
  
 
-## **Additional Information**
+## **Where can I find additional information?**
 
 ** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
 <br>
 ** [Specifications](./) **
-<br> 
-** [Glossary](../../additional_information/glossary/glossary.md ) **
 <br>
 ** [Change log](../Status_definitions/status.md) **
+
+### **License**
+
+The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
