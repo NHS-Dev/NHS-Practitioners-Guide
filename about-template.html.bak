@@ -39,23 +39,14 @@
 
 							<!-- Content -->
 								<section>
-									<header class="main">
-										<div id="container">
 										<!-- Markdown content -->
-													<!-- Markdown content -->
+									<div class="content">
 									{% block content %}
 										{{ page.content }}
-
-										Last update of source file
-										{% if page and page.meta %}
-										  {% if page.meta.git_revision_date_localized or
-												page.meta.revision_date
-										  %}
-											{% include "source-file.html" %}
-										  {% endif %}
-										{% endif %}
-								  {% endblock %}
+									{% endblock %}
+									   </div>
 								</section>
+						
 						<!-- Section -->
 						<section>
 							<header class="major">
@@ -78,7 +69,7 @@
 										<h3>High Resolution Deterministic Precipitation Analysis (HRDPA)</h3>
 										<p>Produces an objective, best estimate of the amount of precipitation that occurred at the surface over recent past periods of 6 or 24 hours. Integrates data from in situ precipitation gauge measurements, weather radar and numerical weather prediction models.</p>
 								<ul class="actions">
-									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" ,class="button big">Learn More</a></li>
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" , class="button big">Learn More</a></li>
 								</ul>
 									</div>
 								</article>
@@ -115,10 +106,13 @@
 						<div class="inner">
 
 							<!-- Search -->
-								  {%- block search_button %}
-									{%- if 'search' in config['plugins'] %}{%- include "searchbox.html" %}{%- endif %}
-								  {%- endblock %}
-
+							{% if 'search' in config['plugins'] %}
+							<section id="search" class="alt">
+									<form action= "{{ './search' |url }}">
+											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
+									</form>
+							</section>
+							{% endif %}
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
@@ -129,14 +123,14 @@
 										{%- if nav|length>1 %}
 											{%- for nav_item in nav %}
 												{%- if nav_item.children %}
-													<li>
+													<li class="{% if nav_item.active%}current{%endif%}">
 													<span class="opener">{{ nav_item.title }}</span>
 													<ul>
 													{%- for nav_item in nav_item.children %}
 														<a href="{{ nav_item.url|url }}" >{{ nav_item.title }}</a>
 													{%- endfor %}
 													</ul>
-													</li>
+													<li class="{% if nav_item.active%}current{%endif%}">
 													{%- else %}
 													<li>
 														<a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
@@ -170,14 +164,11 @@
 	
 		<!-- Scripts -->
 	{%- block libs %}	
+		<script>var base_url = '{{ base_url }}';</script>
 		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/util.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/lunr.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/worker.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/search_index.json'|url }}" defer></script>
 	{%- endblock %}
 </html>

@@ -29,16 +29,17 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="{{ 'index'.html |url }}", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
 								</header>
 
 							<!-- Content -->
 								<section>
-									<header class="main">
 										<!-- Markdown content -->
+									<div class="content">
 									{% block content %}
 										{{ page.content }}
 									{% endblock %}
+									   </div>
 								</section>
 						
 								<!-- Section -->
@@ -60,7 +61,7 @@
 											<h3>Tutorials</h3>
 											<p> Discover tutorials and ways to use data</p>
 											<ul class="actions">
-												<li><a href="{{ './additional_information/usage_and_tutorials/usage_and_tutorials |url }}" ,class="button">Learn more</a></li>
+												<li><a href="{{ './additional_information/glossary/glossary' |url }}" , class="button">Learn more</a></li>
 											</ul>
 										</article>
 										<article>
@@ -68,7 +69,7 @@
 											<h3>Accessing Data</h3>
 											<p>Learn how to access CMC products</p>
 											<ul class="actions">
-												<li><a href="{{ './additional_information/usage_and_tutorials/usage_and_tutorials |url }}" ,class="button">Learn more</a></li>
+												<li><a href="{{ './additional_information/glossary/glossary' |url }}" , class="button">Learn more</a></li>
 											</ul>
 										</article>
 									</div>
@@ -76,8 +77,32 @@
 								<section> 
 									<header class="major">
 										<h2>Frequently Asked Questions</h2>
-								</div>
+									</header>
+									<details>
+										<br>
+										<summary> 
+											FAQ1 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ2 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ3 
+										</summary>
+										TEXT HERE
+									</details>	
+									
+								</section>
 							</div>
+						</div>
 						<!-- Section -->
 							
 							
@@ -86,14 +111,13 @@
 						<div class="inner">
 
 							<!-- Search -->
-							<section id="search" class="alt">
 							{% if 'search' in config['plugins'] %}
-									<form action="search.html">
-											<input type="text" name="q" id="mkdocs-search-query" placeholder="Search" />
+							<section id="search" class="alt">
+									<form action= "{{ './search' |url }}">
+											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
 									</form>
-							{% endif %}
 							</section>
-
+							{% endif %}
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">

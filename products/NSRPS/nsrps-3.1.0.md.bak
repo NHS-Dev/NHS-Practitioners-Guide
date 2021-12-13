@@ -11,9 +11,15 @@ tags:
 ### **Overview**
 
 <p> NSRPS is a Complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current 
-and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. </P>
-
-<!-- {{ read_csv('docs/products/NSRPS/summary-table/summary.csv') }} -->
+and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
+High Resolution Deterministic Prediction System (HRDPS). The component systems of NSRPS include: </p>
+<ul>
+<li> <a href = "../../../coming-soon"> High Resolution Ensemble Precipitation Analysis (HREPA) </a>
+<li> <a href = "../../../coming-soon"> High Resolution Deterministic Prediction System (HRDLPS) </a>
+<li> <a href = "../../../coming-soon">Canadian Land Data Assimilation System (CaLDAS-Sat) </a>
+<li> <a href = "../../DHPS/DHPS-3.1.0"> Deterministic Hydrological Prediction System (DHPS) </a>
+<li> <a href = "../../../coming-soon"> Simulation Hydrodynamique Opérationnel (SHOP) </a>
+</ul>
 
 ** Current version: ** 3.1.0
 <br>
@@ -23,9 +29,10 @@ and future states of the land surface, as well as the movement of water over and
 * [2.0](../../license/license.md)
  -->
 
-## **What is the spatial resolution and coverage of this data?**
+### **What is the spatial resolution and coverage of this data?**
 
 <p>Discharge outputs from NSPRS are currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada.
+As NSRPS is composed of different sub-systems, both the domain and spatial resolution vary based on the which sub-system the output is derived. 
 
 NSRPS is currently established in the following basins: 
 <ul>
@@ -39,40 +46,39 @@ NSRPS is currently established in the following basins:
 
 ![alt text](domain-images/NSRPS_domain.png "Title")
 
- <p> As NSRPS is composed of different sub-systems, both the domain and spatial resolution vary based on the which sub-system the output is derived. </p>
  
- ## **What is the timestep and time period covered by this data?**
+### **What is available?**
  
- 
- ## **What are the outputs from this product?**
- 
-## **System sub-components**
-<p> NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
-High Resolution Deterministic Prediction System (HRDPS). The component systems of NSRPS include: </p>
-
-* [High Resolution Ensemble Precipitation Analysis (HREPA)](./path/to/old_version.md)
-* [Canadian Land Data Assimilation System (CaLDAS-Sat)](./path/to/old_version.md)
-* [Deterministic Hydrological Prediction System (DHPS)](../../products/DHPS/DHPS-3.1.0.md)
-* [Simulation Hydrodynamique Opérationnel (SHOP)](./path/to/old_version.md)
-
 <details>
-<summary>Outputs </summary>
-NSRPS products are implemented at a 1-km resolution. The current outputs from NSRPS are:
+<summary>What is the timestep and time period covered by this data? </summary>
+<br>
+Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast
+</details>
+ 
+<details>
+<br>
+<summary>What are the outputs from this product? </summary>
+<h5>NSRPS products are implemented at a 1-km resolution. The current outputs from NSRPS are:</h5>
 <li> Hourly estimates of discharge </li>
 </details>
-</p>
 
-## **How do I access the data?**
 
-*Currently NSPRS data is only available through ECCC's internal Science Network.*
-
-## **What is the status of this product?** 
-
-**Current Status**: Experimental
+<details>
+<summary>How do I access the data? </summary>
 <br>
-*click [here](../Status_definitions/status.md) for descriptions of different operational statuses*
+<p> <i> Currently DHPS data is only available through ECCC's internal Science Network.</i> </p>
+</details>
+
+
+<details>
+<summary> What is the status of this product? </summary>
+<br>
+<b>Current Status</b>: Experimental
+<br>
+<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+</details>
  
-## **Where can I find additional information?**
+### **Where can I find additional information?**
 
 ** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
 <br>

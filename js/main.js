@@ -233,6 +233,7 @@
 					.trigger('resize.sidebar-lock');
 
 				});
+				
 
 	// Menu.
 		var $menu = $('#menu'),
@@ -256,7 +257,6 @@
 						$window.triggerHandler('resize.sidebar-lock');
 
 				});
-
 			});
 
 })(jQuery);
