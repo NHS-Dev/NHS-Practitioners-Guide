@@ -36,20 +36,18 @@ NHS Pracitioner's guide
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="{{ 'index.html' |url }}", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
 								</header>
 
 							<!-- Content -->
 								<section>
-									<header class="main">
-										<div id="container">
-									<!-- Markdown content -->
+										<!-- Markdown content -->
+									<div class="content">
 									{% block content %}
 										{{ page.content }}
 									{% endblock %}
-								</div>
+									   </div>
 								</section>
-
 									<div class="posts">
 										<article>
 											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
@@ -85,9 +83,34 @@ NHS Pracitioner's guide
 													<li> <a href="#"> tutorial page 2</a></li>
 													<li> <a href="#"> tutorial page 3</a></li>
 												</ul>
-
 										</article>
 									</div>
+								</section>
+								<section> 
+									<header class="major">
+										<h2>Frequently Asked Questions</h2>
+									</header>
+									<details>
+										<br>
+										<summary> 
+											FAQ1 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ2 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ3 
+										</summary>
+										TEXT HERE
+									</details>	
 								</section>
 								</div>
 							</div>					
@@ -96,13 +119,14 @@ NHS Pracitioner's guide
 						<div class="inner">
 
 							<!-- Search -->
-							<section id="search" class="alt">
 							{% if 'search' in config['plugins'] %}
-									<form action="search.html">
-											<input type="text" name="q" id="mkdocs-search-query" placeholder="Search" />
+							<section id="search" class="alt">
+									<form action= "{{ './search' |url }}">
+											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
 									</form>
-							{% endif %}
 							</section>
+							</div>
+							{% endif %}
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
@@ -113,7 +137,7 @@ NHS Pracitioner's guide
 										{%- if nav|length>1 %}
 											{%- for nav_item in nav %}
 												{%- if nav_item.children %}
-													<li>
+													<li class="{% if nav_item.active%}current{%endif%}">
 													<span class="opener">{{ nav_item.title }}</span>
 													<ul>
 													{%- for nav_item in nav_item.children %}
@@ -122,7 +146,7 @@ NHS Pracitioner's guide
 													</ul>
 													</li>
 													{%- else %}
-													<li>
+													<li class="{% if nav_item.active%}current{%endif%}">
 														<a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
 													</li>
 												{%- endif %}
@@ -133,16 +157,7 @@ NHS Pracitioner's guide
 								</nav>
 								<!-- section -->
 								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
+
 								</section>
 
 							<!-- footer -->
@@ -156,14 +171,11 @@ NHS Pracitioner's guide
 	
 		<!-- Scripts -->
 	{%- block libs %}	
+		<script>var base_url = '{{ base_url }}';</script>
 		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/util.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/lunr.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/worker.js'|url }}" defer></script>
-		<script src="{{ 'assets/js/search_index.json'|url }}" defer></script>
 	{%- endblock %}
 </html>

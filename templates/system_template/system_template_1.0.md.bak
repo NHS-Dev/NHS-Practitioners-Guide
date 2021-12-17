@@ -37,10 +37,23 @@ tags:
 
 ## **What is the timestep and time period covered by this data?**
 
+<p>
+
+*Describe the temporal resolution here*
+
+</p>
+
 
 ## **What are the outputs from this product?**
 
+<p>
 
+<details>
+<summary>Outputs </summary>
+drop-down menu for outputs:
+<li> list the outputs here </li>
+</details>
+</p>
 
 ## **System sub-components**
 <p>

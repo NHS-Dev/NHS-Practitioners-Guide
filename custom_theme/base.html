@@ -14,12 +14,18 @@
     {% block site_meta %}
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
-	{%- endblock %}
-	
+	{%- endblock %}	
 	<!-- Favicon -->
-      <link rel="icon" href="{{ config.theme.favicon | url }}" />
-
+	<link rel="icon" href="{{ config.theme.favicon | url }}" />
+	  
+	<!-- Page description -->
+	{% if page and page.meta and page.meta.description %}
+	<meta name="description" content="{{ page.meta.description }}" />
+	{% elif config.site_description %}
+	<meta name="description" content="{{ config.site_description }}" />
+	{% endif %}
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -31,7 +37,15 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="{{ 'index' |url }}", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  {% if page and page.edit_url %}
+										<li><a href="{{ page.edit_url }}" class = "icon brands fa-github"></a></li>
+									  {% elif config.repo_url %}
+										<li><a href="{{ config.repo_url }}" class = "icon brands fa-github"></a></li>
+									  {% endif %}
+								  </ul>
 								</header>
 
 							<!-- Content -->
@@ -52,7 +66,7 @@
 								  {% endblock %}
 								  
 								<ul class="actions">
-									<li><a href="./about" class="button big">Learn More</a></li>
+									<li><a href="{{ './about' |url }}", class="button big">Learn More</a></li>
 								</ul>
 								</div>
 								<span class="image object">
@@ -92,7 +106,7 @@
 										<h3>Regional Deterministic Reforecast System (RDRS)</h3>
 										<p>Hourly, ~10-km resolution reanalysis for North America from 1980-2018 of the main meteorological variables that are required for land surface and hydrology applications.</p>
 								<ul class="actions">
-									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" ,class="button big">Learn More</a></li>
+									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" , class="button big">Learn More</a></li>
 								</ul>
 									</div>
 								</article>
@@ -102,7 +116,7 @@
 										<h3>CanSWE</h3>
 										<p>A coordinated database of snow observations, with a primary focus on snow water equivalent data, covering all provinces and territories. Updated annually with a robust, consistent set of quality control measures applied.</p>
 								<ul class="actions">
-									<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" ,class="button big">Learn More</a></li>
+										<li><a href="{{ './products/NSRPS/nsrps-3.1.0/' |url }}" , class="button big">Learn More</a></li>
 								</ul>
 									</div>
 								</article>
@@ -116,13 +130,15 @@
 						<div class="inner">
 
 							<!-- Search -->
-							<section id="search" class="alt">
 							{% if 'search' in config['plugins'] %}
-									<form action= "{{ 'search.html' |url }}">
-											<input type="text" name="q" id="mkdocs-search-query" placeholder="Search" />
-									</form>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action={{ "search.html"|url }}>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							{% endif %}
-							</section>
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
@@ -133,7 +149,7 @@
 										{%- if nav|length>1 %}
 											{%- for nav_item in nav %}
 												{%- if nav_item.children %}
-													<li>
+													<li class="{% if nav_item.active%}current{%endif%}">
 													<span class="opener">{{ nav_item.title }}</span>
 													<ul>
 													{%- for nav_item in nav_item.children %}
@@ -142,7 +158,7 @@
 													</ul>
 													</li>
 													{%- else %}
-													<li>
+													<li class="{% if nav_item.active%}current{%endif%}">
 														<a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
 													</li>
 												{%- endif %}
@@ -152,29 +168,26 @@
 								</ul>
 								</nav>
 								<!-- section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
+
 
 							<!-- footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+
 								</footer>
 			</div>
 		</div>
 	</body>
 	
 		<!-- Scripts -->
-	{%- block libs %}	
+	{%- block libs %}
+	  <script>
+		// Current page data
+		var mkdocs_page_name = {{ page.title|tojson|safe }};
+		var mkdocs_page_input_path = {{ page.file.src_path|string|tojson|safe }};
+		var mkdocs_page_url = {{ page.abs_url|tojson|safe }};
+	  </script>	
+	  {%- endblock %}
+	  {%- block scripts %}
 		<script>var base_url = '{{ base_url }}';</script>
 		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
 		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>

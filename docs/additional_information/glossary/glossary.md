@@ -6,7 +6,31 @@ template: content-template.html
 
 # Glossary
 
-*add glossary terms below*
+#### Definitions 
+-------------------------------------------------------------------------
+<dl>
+<dt><b>Term 1</b></dt>
+<dd>
+<p>
 
-**Glossary 1**
-**Glossary 2** 
+definition 
+
+</p>
+</dd>
+<dt><b>Term 2</b></dt>
+<dd>
+<p>
+
+definition 
+
+</p>
+</dd>
+<dt><b>Term 3</b></dt>
+<dd>
+<p>
+
+definition 
+
+</p>
+</dd>
+</d1>

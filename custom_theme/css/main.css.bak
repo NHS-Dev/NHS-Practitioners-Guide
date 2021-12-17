@@ -128,11 +128,12 @@ em, i {
   font-style: italic; }
 
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 2em 0;
+  }
 
 h1, h2, h3, h4, h5, h6 {
   color: #3d4449;
-  font-family: arial;
+  font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
   margin: 0 0 1em 0; }
@@ -203,7 +204,7 @@ code {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: arial;
+  font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0; }
   pre code {
@@ -990,12 +991,12 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  font-family: arial;
+  font-family: "Roboto Slab", serif;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.075em;
   margin-top: -0.5em;
-  text-transform: capitalize; }
+  text-transform: uppercase; }
 
 header.major > :last-child {
   border-bottom: solid 3px #f56a6a;
@@ -1208,7 +1209,7 @@ input[type="radio"] + label:before {
   .icon.solid:before {
     font-weight: 900; }
   .icon.brands:before {
-    font-family: 'Font Awesome 5 Free'; }
+    font-family: 'Font Awesome 5 Brands'; }
 
 /* Image */
 .image {
@@ -1499,7 +1500,7 @@ button,
   color: #f56a6a !important;
   cursor: pointer;
   display: inline-block;
-  font-family: arial;
+  font-family: "Roboto Slab", serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3.5em;
@@ -1579,6 +1580,104 @@ button,
   .button:disabled {
     pointer-events: none;
     opacity: 0.25; }
+	
+	
+	
+/* dropdown */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+	
+details {
+	display:block; 
+	width:100 %;
+	margin:10px 0;
+}
+summary {
+	display:block; 
+	color: #f56a6a;
+	background: rgba(230, 235, 237, 0.25);
+	border-radius: 0px;
+	border: 2px solid gray;
+	padding: 5px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+summary:hover{
+	background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+summary::-webkit-details-marker {
+   color:#FF0000; 
+   background:#FFFFFF; 
+}
+
+summary::-webkit-details-marker {
+   display: none
+}
+
+summary:after {
+   content: "+";
+   color: #3d4449;
+   float: left;
+   font-size: 1.5em;
+   font-weight: bold;
+   margin: -5px 5px 0 0;
+   padding: 0px;
+   text-align: center;
+   width: 20px;
+}
+
+details[open] summary:after {
+   content: "-";
+	color: #3d4449;
+}
+
 
 /* Mini Posts */
 .mini-posts article {
@@ -1892,7 +1991,7 @@ button,
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: arial;
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900; }
   #search form:before {
     -moz-transform: scaleX(-1);
@@ -2087,7 +2186,7 @@ button,
   #header .logo {
     border-bottom: 0;
     color: inherit;
-    font-family: Arial;
+    font-family: "Roboto Slab", serif;
     font-size: 1.125em; }
   #header .icons {
     text-align: right; }
@@ -2199,13 +2298,13 @@ button,
   -ms-user-select: none;
   user-select: none;
   color: #3d4449;
-  font-family: Arial;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
   list-style: none;
   margin-bottom: 0;
   padding: 0;
-  text-transform: capitalize; }
+  text-transform: uppercase; }
   #menu ul a, #menu ul span {
     border-bottom: 0;
     color: inherit;
@@ -2232,7 +2331,7 @@ button,
         text-rendering: auto;
         line-height: 1;
         text-transform: none !important;
-        font-family: Arial;
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
       #menu ul a.opener:before, #menu ul span.opener:before {
         -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
@@ -2270,4 +2369,4 @@ button,
   #menu > ul > li:first-child {
     border-top: 0;
     margin-top: 0;
-    padding-top: 0; }
+    padding-top: 0;}

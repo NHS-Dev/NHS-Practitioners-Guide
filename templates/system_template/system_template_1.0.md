@@ -35,45 +35,38 @@ tags:
 *insert image of domain -- if available 
 ![alt text](domain-images/domain.png)
 
-## **What is the timestep and time period covered by this data?**
-
-<p>
-
-*Describe the temporal resolution here*
-
-</p>
-
-
-## **What are the outputs from this product?**
-
-<p>
+### **What is available?**
 
 <details>
-<summary>Outputs </summary>
-drop-down menu for outputs:
-<li> list the outputs here </li>
-</details>
-</p>
-
-## **System sub-components**
-<p>
-*description of system and components*
-</p>
-* [Component 1)](./path/to/component.md)
-* [Component 1)](./path/to/component.md)
-
-## **How do I access the data?**
-
-<p>
-*data access instructions, i.e., Datamart (our page in the guide describing Datamart but also link to the data itself) *  
-</p>
-
-## **What is the status of this product?** 
-
-**Current Status**: Experimental
+<summary>What is the timestep and time period covered by this data? </summary>
 <br>
-*click [here](../Status_definitions/status.md) for descriptions of different operational statuses*
+<p> describe temporal resolution here </p>
+</details>
 
+
+<details>
+<br>
+<summary>What are the outputs from this product? </summary>
+<h5>list outputs here</h5>
+<li> output 1 </li>
+<li> output 2 </li>
+<li> output 3 </li>
+<br>
+</details>
+
+<details>
+<summary>How do I access the data? </summary>
+<br>
+<p> <i> Currently DHPS data is only available through ECCC's internal Science Network.</i> </p>
+</details>
+
+<details>
+<summary> What is the status of this product? </summary>
+<br>
+<b>Current Status</b>: Experimental
+<br>
+<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+</details>
 
 ## **Where can I find additional information?**
 

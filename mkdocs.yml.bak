@@ -1,6 +1,7 @@
 site_name: National Hydrological Service Practitioners Guide
 site_url: https://nhs-dev.github.io/NHS-Practitioners-Guide/
-site_description: National Hydrological Service Pracititioners guide 
+site_description: >-
+    National Hydrological Service Pracititioners guide to CMC prediction products. 
 
 # name of the remote set in your fork where the documentation will actually be deployed
 # validate value with `git remote -v`, it must be pointing to https://github.com/NHS-Dev/NHS-Practitioners-Guide.git
@@ -9,7 +10,11 @@ site_description: National Hydrological Service Pracititioners guide
 # mkdocs-material
 # mkdocs-table-reader-plugin: 
 # tags : pip install git+https://github.com/jldiaz/mkdocs-plugin-tags.git
+
+# Repository
 remote_name: origin
+repo_url: https://github.com/NHS-Dev/NHS-Practitioners-Guide
+edit_uri: ""
 
 nav: 
     - Home: index.md
@@ -20,39 +25,36 @@ nav:
         # - DHPS: products/DHPS/DHPS-3.1.0.md
     # - Real-time Analysis:
         # - DHPS: products/DHPS/DHPS-3.1.0.md
-    - Data Access: data_access/data_access.md 
-    - Data Usage and Tutorials: usage_and_tutorials/test.md
+    - Data Access: 
+        - Data Mart: coming-soon.md
+        - Geomet: coming-soon.md 
+        - File Formats:
+    - Data Usage and Tutorials: coming-soon.md 
     - Additional Information: 
         - Glossary: additional_information/glossary/glossary.md 
-        - Operation Statuses: additional_information/Op_status/op-status.md
+        - Operation Statuses: additional_information/operational-statuses/operational-status.md
         - License: license/license.md
+
+
 theme: 
-    name: null
+    name: material
     custom_dir: custom_theme
     favicon: assets/favicon.png
     static_templates:
        - 404.html
        
-plugins:
-    - search
-    - tags
+    plugins:
+        - search 
+        - tags 
+        
+    include_search_page: true
+    search_index_only: false
+      
+features:
+    - search.highlight
+    - search.suggest
     
-include_search_page: true
-search_index_only: false
-
-    
-markdown_extensions:
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true 
-  - tables
-  - meta
-    
-extra:
-    generator: false
-    
-extra_css: [assets/css/extra.css]
-    
+        
 
 #required libraries 
 # mkdocs

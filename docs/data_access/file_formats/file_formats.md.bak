@@ -1,0 +1,28 @@
+---
+title: File Formats 
+template: about-template.html
+tags: 
+- NetCDF
+- FST
+---
+<header class="major">
+	<h2> NetCDF </h2>
+</header>
+##### File names are structured generally as: 
+
+````
+YYYYMMDDTHHZ_ORGANIZATION _DATASET _VARIABLE_LEVEL_GRID_PTXXXH.nc
+````
+
+<h5> The elements of the filenames are as follows: </h5>
+
+| String      | Description |
+| ----------- | ----------- |
+| **YYYYMMDDTHHZ**      | The issue date and time       |
+| **ORGANIZATION**   |  Refers to the group that creates the files        |
+| **DATASET**      | Refers to the forecast model. If the data is an analysis the format is MODEL-Analysis.       |
+| **Paragraph**   | Refers to the vertical coordinate (pressure level, surface, sub-surface, etc.)        |
+| **LEVEL**      | Refers to the projection and grid resolution in degrees       |
+| **GRID**   |  Refers to the forecast hour. If not applicable, the default is PT0H (e.g. analyses        |
+
+ 
