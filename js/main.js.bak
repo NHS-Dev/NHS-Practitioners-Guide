@@ -257,9 +257,27 @@
 						$window.triggerHandler('resize.sidebar-lock');
 
 				});
-
 			});
+			
+	var search_term = getSearchTerm(),
+        $search_modal = $('#mkdocs_search_modal'),
+        $keyboard_modal = $('#mkdocs_keyboard_modal');
 
-			});
+    if (search_term) {
+        $search_modal.modal();
+    }
+
+    // make sure search input gets autofocus every time modal opens.
+    $search_modal.on('shown.bs.modal', function() {
+        $search_modal.find('#mkdocs-search-query').focus();
+    });
+
+    // Close search modal when result is selected
+    // The links get added later so listen to parent
+    $('#mkdocs-search-results').click(function(e) {
+        if ($(e.target).is('a')) {
+            $search_modal.modal('hide');
+        }
+    });
 
 })(jQuery);

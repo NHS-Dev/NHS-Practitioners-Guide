@@ -31,9 +31,14 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="/NHS-Practitioners-Guide/index.html", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="/NHS-Practitioners-Guide/index", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  
+										<li><a href="https://github.com/NHS-Dev/NHS-Practitioners-Guide" class = "icon brands fa-github"></a></li>
+									  
+								  </ul>
 								</header>
-
 							<!-- Content -->
 								<section>
 										<!-- Markdown content -->
@@ -95,6 +100,28 @@
 						<section> 
 							<header class="major">
 									<h2>Frequently Asked Questions</h2>
+							</header>
+							<details>
+								<br>
+								<summary> 
+									FAQ1 
+								</summary>
+								TEXT HERE
+							</details>
+							<details>
+								<br>
+								<summary> 
+									FAQ2 
+								</summary>
+								TEXT HERE
+							</details>
+							<details>
+								<br>
+								<summary> 
+									FAQ3 
+								</summary>
+								TEXT HERE
+							</details>	
 					</section>
 					</div>
 				</div>				
@@ -104,11 +131,13 @@
 
 							<!-- Search -->
 							
-							<section id="search" class="alt">
-									<form action= "/NHS-Practitioners-Guide/./search">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=/NHS-Practitioners-Guide/search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -116,20 +145,25 @@
 										<h2>Menu</h2>
 									</header>
 										<ul>
-													<li>
+													<li class="">
 														<a href="/NHS-Practitioners-Guide/." class="nav-link">Home</a>
 													</li>
-													<li>
+													<li class="">
 														<a href="/NHS-Practitioners-Guide/about/" class="nav-link">About</a>
 													</li>
-													<li>
+													<li class="">
 														<a href="/NHS-Practitioners-Guide/available-datasets/" class="nav-link">Available Data</a>
 													</li>
-													<li>
-														<a href="/NHS-Practitioners-Guide/data_access/data_access.md" class="nav-link">Data Access</a>
+													<li class="">
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="/NHS-Practitioners-Guide/coming-soon/" >Data Mart</a>
+														<a href="/NHS-Practitioners-Guide/coming-soon/" >Geomet</a>
+														<a href="/NHS-Practitioners-Guide/data_access/file_formats/file_formats/" >File Formats</a>
+													</ul>
 													</li>
-													<li>
-														<a href="/NHS-Practitioners-Guide/usage_and_tutorials/test.md" class="nav-link">Data Usage and Tutorials</a>
+													<li class="">
+														<a href="/NHS-Practitioners-Guide/coming-soon/" class="nav-link">Data Usage and Tutorials</a>
 													</li>
 													<li class="">
 													<span class="opener">Additional Information</span>
@@ -138,24 +172,12 @@
 														<a href="/NHS-Practitioners-Guide/additional_information/operational-statuses/operational-status/" >Operation Statuses</a>
 														<a href="/NHS-Practitioners-Guide/license/license/" >License</a>
 													</ul>
-													<li class="">
+													</li>
 								</ul>
 								</nav>
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
 							<!-- footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+
 								</footer>
 
 			</div>

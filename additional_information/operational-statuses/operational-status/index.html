@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
         <title>Operation Statuses - National Hydrological Service Practitioners Guide</title>
@@ -10,7 +15,7 @@
     
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
-	<!-- Favicon -->
+		<!-- Favicon -->
       <link rel="icon" href="../../../assets/favicon.png" />
 
 	</head>
@@ -25,94 +30,160 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="../../../index.html", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="../../../index", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  
+										<li><a href="https://github.com/NHS-Dev/NHS-Practitioners-Guide" class = "icon brands fa-github"></a></li>
+									  
+								  </ul>
 								</header>
-
 							<!-- Content -->
 								<section>
 										<!-- Markdown content -->
 									<div class="content">
 									
-										<h3 id="test-page">TEST PAGE</h3>
+										<h2 id="cmc-run-types"><strong>CMC Run types</strong></h2>
+<p> 
+A run is when a suite (or system) is executed repeatedly and monitored. Different run types have different permissions, computation priorities, setup instructions, and monitoring conditions according to operational prediction systems tech transfer.
+Tech transfer describes the processes of moving a run from one type to another type.
+</p>
+
+<h4 id="definitions">Definitions</h4>
+<hr />
+<dl>
+<dt><b>Operational</b></dt>
+<dd>
+<p>
+
+An Operational run is continiously monitored and has full operational status. 
+
+</p>
+</dd>
+<dt><b>Pre-operational</b></dt>
+<dd>
+<p>
+
+A pre-operational (or stage) suite is intended to replace the existing parallel suite. . It is first validated against the corresponding parallel one after 24-hour period, and will be archived into the parallel trunk and branches.
+The soon-to-be-replaced parallel suite will be turned off thereafter.
+
+</p>
+</dd>
+<dt><b>Parallel</b></dt>
+<dd>
+<p>
+
+A parallel run is run alongside (in parallel) to an existing, stable system. The two systems are then compared.
+Typically, parallel runs do not produce live products delivered to external clients. A parallel suite is setup either wehn there are major improvements, fixes
+or modifications to an existing operational system, or when there is a new soon-to-be operational system. A parallel run ensures changes and modifications will work and perform as 
+expected withouth impacting the current operational system. 
+
+</p>
+</dd>
+<dt><b>Development</b></dt>
+<dd>
+<p>
+
+A development run is usally not a monitored system. Development runs are often used to test and evaluate new systems, and monitoring 
+such systems is the responsibility of the developer. 
+
+</p>
+</dd>
+
+<d1>
 									
 									   </div>
 								</section>
 						
-								<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Additional Resources</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Glossary</h3>
-											<p>Learn common terms used within this guide</p>
-											<ul class="actions">
-												<li><a href="../../glossary/glossary" , class="button">Learn more</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Tutorials</h3>
-											<p> Discover tutorials and ways to use data</p>
-											<ul class="actions">
-												<li><a href="../../glossary/glossary" , class="button">Learn more</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Accessing Data</h3>
-											<p>Learn how to access CMC products</p>
-											<ul class="actions">
-												<li><a href="../../glossary/glossary" , class="button">Learn more</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
-								<section> 
-									<header class="major">
-										<h2>Frequently Asked Questions</h2>
-									</header>
-									<details>
-										<br>
-										<summary> 
-											FAQ1 
-										</summary>
-										TEXT HERE
-									</details>
-									<details>
-										<br>
-										<summary> 
-											FAQ2 
-										</summary>
-										TEXT HERE
-									</details>
-									<details>
-										<br>
-										<summary> 
-											FAQ3 
-										</summary>
-										TEXT HERE
-									</details>	
-									
-								</section>
-							</div>
-						</div>
 						<!-- Section -->
-							
-							
+						<section>
+							<header class="major">
+								<h2>Highlighted Products</h2>
+							</header>
+							<div class="posts">
+								<article>
+									<div class="content">
+										<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+										<h3>National Surface and River Prediction System (NSRPS)</h3>
+										<p>A complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks.</p>
+								<ul class="actions">
+									<li><a href="../../../products/NSRPS/nsrps-3.1.0/" , class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+								<article>
+									<div class="content">
+									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+										<h3>High Resolution Deterministic Precipitation Analysis (HRDPA)</h3>
+										<p>Produces an objective, best estimate of the amount of precipitation that occurred at the surface over recent past periods of 6 or 24 hours. Integrates data from in situ precipitation gauge measurements, weather radar and numerical weather prediction models.</p>
+								<ul class="actions">
+									<li><a href="../../../products/NSRPS/nsrps-3.1.0/" , class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+								<article>
+									<div class="content">
+									<a href="#" class="image"><img src="/images/pic03.jpg" alt="" /></a>
+										<h3>Regional Deterministic Reforecast System (RDRS)</h3>
+										<p>Hourly, ~10-km resolution reanalysis for North America from 1980-2018 of the main meteorological variables that are required for land surface and hydrology applications.</p>
+								<ul class="actions">
+									<li><a href="../../../products/NSRPS/nsrps-3.1.0/" , class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+								<article>
+									<div class="content">
+									<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+										<h3>CanSWE</h3>
+										<p>A coordinated database of snow observations, with a primary focus on snow water equivalent data, covering all provinces and territories. Updated annually with a robust, consistent set of quality control measures applied.</p>
+								<ul class="actions">
+									<li><a href="../../../products/NSRPS/nsrps-3.1.0/" , class="button big">Learn More</a></li>
+								</ul>
+									</div>
+								</article>
+							</div>
+						</section>
+						<section> 
+							<header class="major">
+									<h2>Frequently Asked Questions</h2>
+							</header>
+							<details>
+								<br>
+								<summary> 
+									FAQ1 
+								</summary>
+								TEXT HERE
+							</details>
+							<details>
+								<br>
+								<summary> 
+									FAQ2 
+								</summary>
+								TEXT HERE
+							</details>
+							<details>
+								<br>
+								<summary> 
+									FAQ3 
+								</summary>
+								TEXT HERE
+							</details>	
+					</section>
+					</div>
+				</div>				
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
 
 							<!-- Search -->
 							
-							<section id="search" class="alt">
-									<form action= "../../../search">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=../../../search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -120,22 +191,27 @@
 										<h2>Menu</h2>
 									</header>
 										<ul>
-													<li>
+													<li class="">
 														<a href="../../.." class="nav-link">Home</a>
 													</li>
-													<li>
+													<li class="">
 														<a href="../../../about/" class="nav-link">About</a>
 													</li>
-													<li>
+													<li class="">
 														<a href="../../../available-datasets/" class="nav-link">Available Data</a>
 													</li>
-													<li>
-														<a href="../../../data_access/data_access.md" class="nav-link">Data Access</a>
+													<li class="">
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="../../../coming-soon/" >Data Mart</a>
+														<a href="../../../coming-soon/" >Geomet</a>
+														<a href="../../../data_access/file_formats/file_formats/" >File Formats</a>
+													</ul>
 													</li>
-													<li>
-														<a href="../../../usage_and_tutorials/test.md" class="nav-link">Data Usage and Tutorials</a>
+													<li class="">
+														<a href="../../../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
 													</li>
-													<li>
+													<li class="current">
 													<span class="opener">Additional Information</span>
 													<ul>
 														<a href="../../glossary/glossary/" >Glossary</a>
@@ -145,24 +221,12 @@
 													</li>
 								</ul>
 								</nav>
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
+							<!-- footer -->
+								<footer id="footer">
 
-							<!-- Footer -->
-				<footer id="footer">
-					<p class="copyright">&copy; insert copyright here<a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				</footer>
+								</footer>
+
+			</div>
 		</div>
 	</body>
 	

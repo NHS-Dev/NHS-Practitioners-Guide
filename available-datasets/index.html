@@ -120,11 +120,13 @@ NHS Pracitioner's guide
 
 							<!-- Search -->
 							
-							<section id="search" class="alt">
-									<form action= "../search">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=../search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -142,10 +144,15 @@ NHS Pracitioner's guide
 														<a href="./" class="nav-link">Available Data</a>
 													</li>
 													<li class="">
-														<a href="../data_access/data_access.md" class="nav-link">Data Access</a>
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="../coming-soon/" >Data Mart</a>
+														<a href="../coming-soon/" >Geomet</a>
+														<a href="../data_access/file_formats/file_formats/" >File Formats</a>
+													</ul>
 													</li>
 													<li class="">
-														<a href="../usage_and_tutorials/test.md" class="nav-link">Data Usage and Tutorials</a>
+														<a href="../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
 													</li>
 													<li class="">
 													<span class="opener">Additional Information</span>
@@ -159,16 +166,7 @@ NHS Pracitioner's guide
 								</nav>
 								<!-- section -->
 								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
+
 								</section>
 
 							<!-- footer -->

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-        <title>DHPS - National Hydrological Service Practitioners Guide</title>
+        <title>HRDLPS - National Hydrological Service Practitioners Guide</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
@@ -25,9 +25,14 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="../../../index.html", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="../../../index", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  
+										<li><a href="https://github.com/NHS-Dev/NHS-Practitioners-Guide" class = "icon brands fa-github"></a></li>
+									  
+								  </ul>
 								</header>
-
 							<!-- Content -->
 								<section>
 										<!-- Markdown content -->
@@ -36,66 +41,68 @@
 										<h2 id="high-resolution-deterministic-prediction-system-hrdlps"><strong> High Resolution Deterministic Prediction System (HRDLPS) </strong></h2>
 <h3 id="overview"><strong>Overview</strong></h3>
 <p>
-HRDLPS predicts the future state of the land surface for NSRPS. More specifically, it produces high-resolutions forescasts of land surface and sub-surface
-variables using Surface Prediction System (SPS). 
+
+HRDLPS is a 2.5-km high resolution land surface predicition system that produces high-resolution medium-range forecasts of surface and near surface variables, 
+and provides high quality input fields to operational hydrological systems. The system uses <a href = "../../CALDAS-SAT/CALDAS-SAT-2.1.3"> CaLDAS-Sat  </a>  
+analyses for initial conditions and forcing fields from HRDPS and GDPS. HRDLPS generates the necessary input fields for the <a href = "../../DHPS/DHPS-3.1.0"> Deterministic Hydrological Prediction System (DHPS) </a>.
+
 </p>
 
-<p><strong> Current version: </strong> 2.0
-<br>
-<strong> Past versions: </strong></p>
-<ul>
-<li><a href="./previous_versions/old_version.md">x.x</a></li>
-<li><a href="./previous_versions/old_version.md">x.x</a></li>
-</ul>
+<p><strong> Current version: </strong> 2.1 2.0.0 
+<br></p>
+<!-- ** Past versions: **
+
+* [x.x](./previous_versions/old_version.md)
+* [x.x](./previous_versions/old_version.md)
+ -->
 <h3 id="what-is-the-spatial-resolution-and-coverage-of-this-data"><strong>What is the spatial resolution and coverage of this data?</strong></h3>
 <p>
 
-*provide a more detailed description of the system, which can include more detailed overview of the system or product*
+HRDLPS is run on a 2.5-km national grid.
 
-<p>
+</p>
 
-### **What is available?**
-
+<h3 id="what-is-available"><strong>What is available?</strong></h3>
 <details>
 <summary>What is the timestep and time period covered by this data? </summary>
 <br>
-<p> describe temporal resolution here </p>
+<p> HRDLPS is run every 12 hours (00 and 12 Z), and currently produces hourly forecasts up to 6-days (144h) into the future. </p>
 </details>
 
 <details>
 <br>
 <summary>What are the outputs from this product? </summary>
-<h5>list outputs here</h5>
-<li> output 1 </li>
-<li> output 2 </li>
-<li> output 3 </li>
+<h5> HRDLPS produces hourly forecasts with lead times up to 144h of near-surface, surface, and sub-surface variables such as:</h5>
+<li> 1.5-m temperature and dewpoint, 10-m wind </li>
+<li> Surface temperatures (bare ground, vegetation, snow) </li>
+<li> Snow depth </li>
+<li> Soil mositure </li>
+<li> Hourly hydrological fluxes (i.e. subsurface runoff, subsurface lateral flow, and drainage. </li>
 <br>
 </details>
 
 <details>
 <summary>How do I access the data? </summary>
 <br>
-<p> <i> Currently DHPS data is only available through ECCC's internal Science Network.</i> </p>
+<p> <i> Currently HRDLPS data is only available through ECCC's internal Science Network.</i> </p>
 </details>
 
 <details>
 <summary> What is the status of this product? </summary>
 <br>
-<b>Current Status</b>: Experimental
+<b>Current Status</b>: Operational
 <br>
-<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+<p> click  <a href = "../../../additional_information/operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>
 
-### **Where can I find additional information?**
-** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
+<h3 id="where-can-i-find-additional-information"><strong>Where can I find additional information?</strong></h3>
+<p><strong> <a href="../documentation/Tech_note_dhps_v310_e_Final_20210915.pdf">Technical note</a> </strong>
 <br>
-** [Specifications](./) **
+<strong> <a href="./">Specifications</a> </strong>
 <br>
-** [Change log](../Status_definitions/status.md) **
-
-### **License**
-
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
+<strong> <a href="../Status_definitions/status.md">Change log</a> </strong></p>
+<h3 id="license"><strong>License</strong></h3>
+<p>The <a href="../../../license/license/">End-User Licence for Environment and Climate Change Canada's Data Servers</a> specifies the conditions of use of this data.</p>
 									
 									   </div>
 								</section>
@@ -170,11 +177,13 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 							<!-- Search -->
 							
-							<section id="search" class="alt">
-									<form action= "../../../search">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=../../../search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -192,10 +201,15 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 														<a href="../../../available-datasets/" class="nav-link">Available Data</a>
 													</li>
 													<li>
-														<a href="../../../data_access/data_access.md" class="nav-link">Data Access</a>
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="../../../coming-soon/" >Data Mart</a>
+														<a href="../../../coming-soon/" >Geomet</a>
+														<a href="../../../data_access/file_formats/file_formats/" >File Formats</a>
+													</ul>
 													</li>
 													<li>
-														<a href="../../../usage_and_tutorials/test.md" class="nav-link">Data Usage and Tutorials</a>
+														<a href="../../../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
 													</li>
 													<li>
 													<span class="opener">Additional Information</span>

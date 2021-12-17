@@ -14,9 +14,9 @@ tags:
 and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
 High Resolution Deterministic Prediction System (HRDPS). The component systems of NSRPS include: </p>
 <ul>
-<li> <a href = "../../../coming-soon"> High Resolution Ensemble Precipitation Analysis (HREPA) </a>
-<li> <a href = "../../../coming-soon"> High Resolution Deterministic Prediction System (HRDLPS) </a>
-<li> <a href = "../../../coming-soon">Canadian Land Data Assimilation System (CaLDAS-Sat) </a>
+<li> <a href = "../../HREPA/HREPA-1.3.0"> High Resolution Ensemble Precipitation Analysis (HREPA) </a>
+<li> <a href = "../../HRDLPS/HRDLPS-2.0"> High Resolution Deterministic Prediction System (HRDLPS) </a>
+<li> <a href = "../../CALDAS-SAT/CALDAS-SAT-2.1.3">Canadian Land Data Assimilation System (CaLDAS-Sat) </a>
 <li> <a href = "../../DHPS/DHPS-3.1.0"> Deterministic Hydrological Prediction System (DHPS) </a>
 <li> <a href = "../../../coming-soon"> Simulation Hydrodynamique Opérationnel (SHOP) </a>
 </ul>
@@ -58,8 +58,27 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 <details>
 <br>
 <summary>What are the outputs from this product? </summary>
-<h5>NSRPS products are implemented at a 1-km resolution. The current outputs from NSRPS are:</h5>
-<li> Hourly estimates of discharge </li>
+<h5>Outputs</h5>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Variable </th>
+				<th>Variable long name</th>
+				<th>Unit </th>
+				<th>Level </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Discharge (disc) </td>
+				<td>Mean discharge value exiting the river channel over the hour ending at the indicated time</td>
+				<td>m3/s</td>
+				<td>Surface</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 </details>
 
 
@@ -73,9 +92,9 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 <details>
 <summary> What is the status of this product? </summary>
 <br>
-<b>Current Status</b>: Experimental
+<b>Current Status</b>: Operational
 <br>
-<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+<p> click  <a href = "../../../additional_information/operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>
  
 ### **Where can I find additional information?**

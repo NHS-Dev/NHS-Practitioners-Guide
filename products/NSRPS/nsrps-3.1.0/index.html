@@ -25,9 +25,14 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="../../../index.html", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="../../../index", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  
+										<li><a href="https://github.com/NHS-Dev/NHS-Practitioners-Guide" class = "icon brands fa-github"></a></li>
+									  
+								  </ul>
 								</header>
-
 							<!-- Content -->
 								<section>
 										<!-- Markdown content -->
@@ -39,8 +44,8 @@
 and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
 High Resolution Deterministic Prediction System (HRDPS). The component systems of NSRPS include: </p>
 <ul>
-<li> <a href = "../../../coming-soon"> High Resolution Ensemble Precipitation Analysis (HREPA) </a>
-<li> <a href = "../../../coming-soon"> High Resolution Deterministic Prediction System (HRDLPS) </a>
+<li> <a href = "../../HREPA/HREPA-1.3.0"> High Resolution Ensemble Precipitation Analysis (HREPA) </a>
+<li> <a href = "../../HRDLPS/HRDLPS-2.0"> High Resolution Deterministic Prediction System (HRDLPS) </a>
 <li> <a href = "../../CALDAS-SAT/CALDAS-SAT-2.1.3">Canadian Land Data Assimilation System (CaLDAS-Sat) </a>
 <li> <a href = "../../DHPS/DHPS-3.1.0"> Deterministic Hydrological Prediction System (DHPS) </a>
 <li> <a href = "../../../coming-soon"> Simulation Hydrodynamique Opérationnel (SHOP) </a>
@@ -79,8 +84,27 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 <details>
 <br>
 <summary>What are the outputs from this product? </summary>
-<h5>NSRPS products are implemented at a 1-km resolution. The current outputs from NSRPS are:</h5>
-<li> Hourly estimates of discharge </li>
+<h5>Outputs</h5>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Variable </th>
+                <th>Variable long name</th>
+                <th>Unit </th>
+                <th>Level </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Discharge (disc) </td>
+                <td>Mean discharge value exiting the river channel over the hour ending at the indicated time</td>
+                <td>m**3/s</td>
+                <td>Surface</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </details>
 
 <details>
@@ -92,9 +116,9 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 <details>
 <summary> What is the status of this product? </summary>
 <br>
-<b>Current Status</b>: Experimental
+<b>Current Status</b>: Operational
 <br>
-<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+<p> click  <a href = "../../../additional_information/operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>
 
 <h3 id="where-can-i-find-additional-information"><strong>Where can I find additional information?</strong></h3>
@@ -179,11 +203,13 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 
 							<!-- Search -->
 							
-							<section id="search" class="alt">
-									<form action= "../../../search">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=../../../search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -201,10 +227,15 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 														<a href="../../../available-datasets/" class="nav-link">Available Data</a>
 													</li>
 													<li>
-														<a href="../../../data_access/data_access.md" class="nav-link">Data Access</a>
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="../../../coming-soon/" >Data Mart</a>
+														<a href="../../../coming-soon/" >Geomet</a>
+														<a href="../../../data_access/file_formats/file_formats/" >File Formats</a>
+													</ul>
 													</li>
 													<li>
-														<a href="../../../usage_and_tutorials/test.md" class="nav-link">Data Usage and Tutorials</a>
+														<a href="../../../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
 													</li>
 													<li>
 													<span class="opener">Additional Information</span>

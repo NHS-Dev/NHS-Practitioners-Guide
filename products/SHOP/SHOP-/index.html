@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-        <title>System acrynom - National Hydrological Service Practitioners Guide</title>
+        <title>SHOP - National Hydrological Service Practitioners Guide</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
@@ -25,20 +25,25 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="../../../index.html", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="../../../index", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  
+										<li><a href="https://github.com/NHS-Dev/NHS-Practitioners-Guide" class = "icon brands fa-github"></a></li>
+									  
+								  </ul>
 								</header>
-
 							<!-- Content -->
 								<section>
 										<!-- Markdown content -->
 									<div class="content">
 									
-										<h1 id="system-name"><strong>System name</strong></h1>
-<h2 id="overview"><strong>Overview</strong></h2>
+										<h2 id="operational-hydrodynamic-prediction-system-ohps"><strong>Operational Hydrodynamic Prediction System (OHPS)</strong></h2>
+<h3 id="overview"><strong>Overview</strong></h3>
 <p>
 
-*brief and plain language description of the system*
-
+OHPS is an operational hydrodynamic modeling tool which can produce numerical analyses and simulations of various parameters of interest
+for the St. Lawrence river and its tributaries. 
 </p>
 
 <p><strong> Current version: </strong> x.x.x
@@ -48,10 +53,10 @@
 <li><a href="./previous_versions/old_version.md">x.x</a></li>
 <li><a href="./previous_versions/old_version.md">x.x</a></li>
 </ul>
-<h2 id="what-is-the-spatial-resolution-and-coverage-of-this-data"><strong>What is the spatial resolution and coverage of this data?</strong></h2>
+<h3 id="what-is-the-spatial-resolution-and-coverage-of-this-data"><strong>What is the spatial resolution and coverage of this data?</strong></h3>
 <p>
 
-*provide a more detailed description of the system, which can include more detailed overview of the system or product*
+The analyses are produced for the portion of the St. Lawrence found between Montréal and Trois-Rivières.
 
 </p>
 
@@ -88,13 +93,13 @@
 <p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>
 
-<h2 id="where-can-i-find-additional-information"><strong>Where can I find additional information?</strong></h2>
+<h3 id="where-can-i-find-additional-information"><strong>Where can I find additional information?</strong></h3>
 <p><strong> <a href="documentation/documentation-name">Technical note</a> </strong>
 <br>
 <strong> <a href="./">Specifications</a> </strong>
 <br> 
 <strong> <a href="./path/to/doc">Change log</a> </strong></p>
-<h2 id="product-license"><strong>Product license</strong></h2>
+<h3 id="product-license"><strong>Product license</strong></h3>
 <p>The <a href="../../../license/license/">End-User Licence for Environment and Climate Change Canada's Data Servers</a> specifies the conditions of use of this data.</p>
 									
 									   </div>
@@ -170,11 +175,13 @@
 
 							<!-- Search -->
 							
-							<section id="search" class="alt">
-									<form action= "../../../search">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=../../../search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -192,10 +199,15 @@
 														<a href="../../../available-datasets/" class="nav-link">Available Data</a>
 													</li>
 													<li>
-														<a href="../../../data_access/data_access.md" class="nav-link">Data Access</a>
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="../../../coming-soon/" >Data Mart</a>
+														<a href="../../../coming-soon/" >Geomet</a>
+														<a href="../../../data_access/file_formats/file_formats/" >File Formats</a>
+													</ul>
 													</li>
 													<li>
-														<a href="../../../usage_and_tutorials/test.md" class="nav-link">Data Usage and Tutorials</a>
+														<a href="../../../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
 													</li>
 													<li>
 													<span class="opener">Additional Information</span>

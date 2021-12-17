@@ -15,7 +15,7 @@ tags:
 
 CaLDAS is a land surface data assimilation system, which uses ancillary datasets, atmospheric forcings and various other types of observations to produce land surface analyses for numerical weather prediction systems (i.e. HRDPS). The purpose of CaLDAS-Sat is to ingest both satellite and ground-based observations, 
 while using land surface modelling and data assimilation techniques to generate optimal land surface states and fluxes. CaLDAS-Sat provides analyses of near-surface, surface, and sub-subsurface variables such as snow depth, 2-m atmospheric temperature, skin (land surface)
-temperature and soil moisture over most of Canada at a 2.5-km resolution. Analyses from CaLDAS-Sat are constructed by assimilating observations for these variables, but relys on satellite data for soil moisture retrievals and snow cover extent. Other systems such as DHPS and HRDPS retrieve initial land-surface and soil moisture conditions from CaLDAS-Sat. The land-surface scheme used by CaLDAS-Sat is Soil, Vegetation, and Snow (SVS). 
+temperature and soil moisture over most of Canada at a 2.5-km resolution. Analyses from CaLDAS-Sat are constructed by assimilating observations for these variables, but relys on satellite data for soil moisture retrievals and snow cover extent. Other systems such as DHPS and HDRLPS retrieve initial land-surface and soil moisture conditions from CaLDAS-Sat. The land-surface scheme used by CaLDAS-Sat is Soil, Vegetation, and Snow (SVS). 
 <br>
 <br> 
 <b>Learn more about land surface data assimilation systems here :</b>
@@ -42,7 +42,7 @@ CaLDAS-Sat is currently implemented at 2.5 km grid covering most of Canada, and 
 <details>
 <summary>What is the timestep and time period covered by this data? </summary>
 <br>
-Four times a day, launching at 00, 08, 12, 18 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast
+CaLDAS-Sat uses 0-6 h HRDPS atmospheric forcing four times daily (00, 08, 12, 18 UTC).
 </details>
 
 <details>
@@ -65,9 +65,9 @@ Four times a day, launching at 00, 08, 12, 18 UTC, DHPS performs a 12-h data ass
 <details>
 <summary> What is the status of this product? </summary>
 <br>
-<b>Current Status</b>: Experimental
+<b>Current Status</b>: Operational
 <br>
-<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+<p> click   <a href = "../../../additional_information/operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>
 ### **Where can I find additional information?**
 ** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **

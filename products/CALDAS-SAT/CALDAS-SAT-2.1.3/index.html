@@ -25,9 +25,14 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="../../../index.html", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<a href="../../../index", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  
+										<li><a href="https://github.com/NHS-Dev/NHS-Practitioners-Guide" class = "icon brands fa-github"></a></li>
+									  
+								  </ul>
 								</header>
-
 							<!-- Content -->
 								<section>
 										<!-- Markdown content -->
@@ -39,7 +44,7 @@
 
 CaLDAS is a land surface data assimilation system, which uses ancillary datasets, atmospheric forcings and various other types of observations to produce land surface analyses for numerical weather prediction systems (i.e. HRDPS). The purpose of CaLDAS-Sat is to ingest both satellite and ground-based observations, 
 while using land surface modelling and data assimilation techniques to generate optimal land surface states and fluxes. CaLDAS-Sat provides analyses of near-surface, surface, and sub-subsurface variables such as snow depth, 2-m atmospheric temperature, skin (land surface)
-temperature and soil moisture over most of Canada at a 2.5-km resolution. Analyses from CaLDAS-Sat are constructed by assimilating observations for these variables, but relys on satellite data for soil moisture retrievals and snow cover extent. Other systems such as DHPS and HRDPS retrieve initial land-surface and soil moisture conditions from CaLDAS-Sat. The land-surface scheme used by CaLDAS-Sat is Soil, Vegetation, and Snow (SVS). 
+temperature and soil moisture over most of Canada at a 2.5-km resolution. Analyses from CaLDAS-Sat are constructed by assimilating observations for these variables, but relys on satellite data for soil moisture retrievals and snow cover extent. Other systems such as DHPS and HDRLPS retrieve initial land-surface and soil moisture conditions from CaLDAS-Sat. The land-surface scheme used by CaLDAS-Sat is Soil, Vegetation, and Snow (SVS). 
 <br>
 <br> 
 <b>Learn more about land surface data assimilation systems here :</b>
@@ -69,6 +74,29 @@ CaLDAS-Sat uses 0-6 h HRDPS atmospheric forcing four times daily (00, 08, 12, 18
 <details>
 <br>
 <summary>What are the outputs from this product? </summary>
+<h5>Outputs</h5>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Variable </th>
+                <th>Variable long name</th>
+                <th>Unit </th>
+                <th>Level </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Discharge (disc) </td>
+                <td>Mean discharge value exiting the river channel over the hour ending at the indicated time</td>
+                <td>m**3/s</td>
+                <td>Surface</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
 <h5>Relevant outputs from CaLDAS-Sat include:</h5>
 <li> Soil moisture (layers 1-4, down to a depth of 40 cm) </li>
 <li> Surface temperatures: bare ground, vegetation, and snow  </li>
@@ -86,9 +114,9 @@ CaLDAS-Sat uses 0-6 h HRDPS atmospheric forcing four times daily (00, 08, 12, 18
 <details>
 <summary> What is the status of this product? </summary>
 <br>
-<b>Current Status</b>: Experimental
+<b>Current Status</b>: Operational
 <br>
-<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+<p> click   <a href = "../../../additional_information/operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>
 <h3 id="where-can-i-find-additional-information"><strong>Where can I find additional information?</strong></h3>
 <p><strong> <a href="../documentation/Tech_note_dhps_v310_e_Final_20210915.pdf">Technical note</a> </strong>
@@ -172,11 +200,13 @@ CaLDAS-Sat uses 0-6 h HRDPS atmospheric forcing four times daily (00, 08, 12, 18
 
 							<!-- Search -->
 							
-							<section id="search" class="alt">
-									<form action= "../../../search">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=../../../search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
 							
 							<!-- Menu -->
 								<nav id="menu">
@@ -194,10 +224,15 @@ CaLDAS-Sat uses 0-6 h HRDPS atmospheric forcing four times daily (00, 08, 12, 18
 														<a href="../../../available-datasets/" class="nav-link">Available Data</a>
 													</li>
 													<li>
-														<a href="../../../data_access/data_access.md" class="nav-link">Data Access</a>
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="../../../coming-soon/" >Data Mart</a>
+														<a href="../../../coming-soon/" >Geomet</a>
+														<a href="../../../data_access/file_formats/file_formats/" >File Formats</a>
+													</ul>
 													</li>
 													<li>
-														<a href="../../../usage_and_tutorials/test.md" class="nav-link">Data Usage and Tutorials</a>
+														<a href="../../../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
 													</li>
 													<li>
 													<span class="opener">Additional Information</span>
