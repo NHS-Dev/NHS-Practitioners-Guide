@@ -58,34 +58,14 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 <details>
 <br>
 <summary>What are the outputs from this product? </summary>
-<h5>Outputs</h5>
-<div class="table-wrapper">
-	<table>
-		<thead>
-			<tr>
-				<th>Variable </th>
-				<th>Variable long name</th>
-				<th>Unit </th>
-				<th>Level </th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Discharge (disc) </td>
-				<td>Mean discharge value exiting the river channel over the hour ending at the indicated time</td>
-				<td>m3/s</td>
-				<td>Surface</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+<p> </p>
 </details>
 
 
 <details>
 <summary>How do I access the data? </summary>
 <br>
-<p> <i> Currently DHPS data is only available through ECCC's internal Science Network.</i> </p>
+<p> <i> Currently NSRPS data is only available through ECCC's internal Science Network.</i> </p>
 </details>
 
 

@@ -5,6 +5,7 @@ tags:
 - NetCDF
 - FST
 ---
+
 <header class="major">
 	<h2> NetCDF </h2>
 </header>
@@ -23,6 +24,24 @@ YYYYMMDDTHHZ_ORGANIZATION _DATASET _VARIABLE_LEVEL_GRID_PTXXXH.nc
 | **DATASET**      | Refers to the forecast model. If the data is an analysis the format is MODEL-Analysis.       |
 | **Paragraph**   | Refers to the vertical coordinate (pressure level, surface, sub-surface, etc.)        |
 | **LEVEL**      | Refers to the projection and grid resolution in degrees       |
-| **GRID**   |  Refers to the forecast hour. If not applicable, the default is PT0H (e.g. analyses        |
-
+| **GRID**   |  Refers to to the projection and grid resolution in degrees      |
+| **PTXXXH**   | Refers to the forecast hour. If not applicable, the default is PT0H (e.g. analyses)         |
  
+##### An example file name:
+````
+20211201T00Z_MSC_DHPS_River-Discharge_Sfc_ RLatLon0.008_PT001H.nc 
+````
+
+<header class="major">
+	<h2> <i>.tar</i> package contents  </h2>
+</header>
+
+
+##### All files from a single run are merged into a tar file package. The tar packages follow the name convention: 
+````
+YYYYMMDDHH_ORGANIZATION _MODEL.nc.tar
+````
+
+<p> 
+<b> File names and formats will vary based on the product. Refer to <a href="../../../available-datasets" > individual product </a> pages for more information. </b>
+</p>

@@ -72,16 +72,16 @@
 <td>Refers to the forecast model. If the data is an analysis the format is MODEL-Analysis.</td>
 </tr>
 <tr>
-<td><strong>Paragraph</strong></td>
-<td>Refers to the vertical coordinate (pressure level, surface, sub-surface, etc.)</td>
-</tr>
-<tr>
 <td><strong>LEVEL</strong></td>
-<td>Refers to the projection and grid resolution in degrees</td>
+<td>Refers to the vertical coordinate (pressure level, surface, sub-surface, etc.).  DBL = Depth Below Surface, AGL =  Above Ground Level</td>
 </tr>
 <tr>
 <td><strong>GRID</strong></td>
-<td>Refers to the forecast hour. If not applicable, the default is PT0H (e.g. analyses</td>
+<td>Refers to to the projection and grid resolution in degrees</td>
+</tr>
+<tr>
+<td><strong>PTXXXH</strong></td>
+<td>Refers to the forecast hour. If not applicable, the default is PT0H (e.g. analyses)</td>
 </tr>
 </tbody>
 </table>
@@ -92,7 +92,7 @@
     <h2> <i>.tar</i> package contents  </h2>
 </header>
 
-<h5 id="all-files-from-a-single-run-are-compressed-into-a-tar-file-package-the-tar-packages-follow-the-name-convention">All files from a single run are compressed into a tar file package. The tar packages follow the name convention:</h5>
+<h5 id="all-files-from-a-single-run-are-merged-into-a-tar-file-package-the-tar-packages-follow-the-name-convention">All files from a single run are merged into a tar file package. The tar packages follow the name convention:</h5>
 <pre><code>YYYYMMDDHH_ORGANIZATION _MODEL.nc.tar
 </code></pre>
 <p> 
