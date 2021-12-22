@@ -47,17 +47,50 @@ tags:
 <details>
 <br>
 <summary>What are the outputs from this product? </summary>
-<h5>list outputs here</h5>
-<li> output 1 </li>
-<li> output 2 </li>
-<li> output 3 </li>
-<br>
+<ul>
+<li> List items like this </li>
+<li> add <code> boxed words</code> like this 
+</ul>
+<h5>Outputs currently available via NetCDF</h5>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Variable </th>
+				<th>Variable long name</th>
+				<th>Unit </th>
+				<th>Level </th>
+				<th>Frequency (analysis/forecast) </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>DISC</td>
+				<td>Dischard</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+	</table>
+</div>
 </details>
 
 <details>
 <summary>How do I access the data? </summary>
 <br>
-<p> <i> Currently DHPS data is only available through ECCC's internal Science Network.</i> </p>
+<p> <i> Currently system_name data is only available through ECCC's internal Science Network.</i> </p>
+</details>
+
+<details>
+<summary>What is the file structure and format?</summary>
+<br>
+<i> Currently system_name data is available in NetCDF file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats <i>
+<ul>
+<li> List items like this </li>
+<li> add <code> boxed words</code> like this 
+</ul>
+<br>
+<br>
 </details>
 
 <details>

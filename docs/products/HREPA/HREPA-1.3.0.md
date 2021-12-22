@@ -49,9 +49,42 @@ HREPA provides analyses and ensemble forecasts over Canada and the United States
 <details>
 <br>
 <summary>What are the outputs from this product? </summary>
-HREPA provides a 24-member ensemble forecast and one control run of precipitation accumulations.
-<br>
+<h5>Outputs from HREPA include:</h5>
+<ul>
+<li>24-member set of analysis for accumulations of high resolution precipitation</li>
+<li>one control member that is equivalent to a deternministic analysis</li>
+</ul>
+<h5>Outputs currently available via NetCDF</h5>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Variable </th>
+				<th>Variable long name</th>
+				<th>Unit </th>
+				<th>Level </th>
+				<th>Frequency (analysis/forecast) </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>q025 </td>
+				<td>25th precipitation amount percentile</td>
+				<td>kg/m2</td>
+				<td>Surface</td>
+				<td>6h</td>
+			</tr>
+	</table>
+</div>
 </details>
+
+<details>
+<summary>What is the file structure and format?</summary>
+<br>
+<i> Currently only the 25th precipitation amount percentile estimated through the 25 members of the ensemble is available in the NetCDF file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats </i>
+</ul>
+</details>
+
 
 <details>
 <summary>How do I access the data? </summary>

@@ -5,6 +5,7 @@ tags:
 - NetCDF
 - FST
 ---
+
 <header class="major">
 	<h2> NetCDF </h2>
 </header>
@@ -21,10 +22,9 @@ YYYYMMDDTHHZ_ORGANIZATION _DATASET _VARIABLE_LEVEL_GRID_PTXXXH.nc
 | **YYYYMMDDTHHZ**      | The issue date and time       |
 | **ORGANIZATION**   |  Refers to the group that creates the files        |
 | **DATASET**      | Refers to the forecast model. If the data is an analysis the format is MODEL-Analysis.       |
-| **Paragraph**   | Refers to the vertical coordinate (pressure level, surface, sub-surface, etc.)        |
-| **LEVEL**      | Refers to the projection and grid resolution in degrees       |
-| **GRID**   |  Refers to the forecast hour. If not applicable, the default is PT0H (e.g. analyses        |
-
+| **LEVEL**      | Refers to the vertical coordinate (pressure level, surface, sub-surface, etc.).  DBL = Depth Below Surface, AGL =  Above Ground Level   |
+| **GRID**   |  Refers to to the projection and grid resolution in degrees      |
+| **PTXXXH**   | Refers to the forecast hour. If not applicable, the default is PT0H (e.g. analyses)         |
  
 ##### An example file name:
 ````
@@ -36,7 +36,7 @@ YYYYMMDDTHHZ_ORGANIZATION _DATASET _VARIABLE_LEVEL_GRID_PTXXXH.nc
 </header>
 
 
-##### All files from a single run are compressed into a tar file package. The tar packages follow the name convention: 
+##### All files from a single run are merged into a tar file package. The tar packages follow the name convention: 
 ````
 YYYYMMDDHH_ORGANIZATION _MODEL.nc.tar
 ````

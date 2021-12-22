@@ -120,11 +120,12 @@ NHS Pracitioner's guide
 
 							<!-- Search -->
 							{% if 'search' in config['plugins'] %}
-							<section id="search" class="alt">
-									<form action= "{{ './search' |url }}">
-											<input type="text" name="q" id="mkdocs-search-query", class="search_input search-query ui-autocomplete-input" placeholder="Search" />
-									</form>
-							</section>
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action={{ "search.html"|url }}>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
 							</div>
 							{% endif %}
 							<!-- Menu -->
