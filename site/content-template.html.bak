@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	{%- block htmltitle %}
+        <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+	{%- endblock %}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	{% block styles %}
+		<link rel="stylesheet" href="{{ 'css/main.css' | url }}" />
+	{%- endblock %}
+	<!-- Meta tags -->
+    {% block site_meta %}
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+	{%- endblock %}
+	<!-- Favicon -->
+      <link rel="icon" href="{{ config.theme.favicon | url }}" />
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="{{ 'index' |url }}", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Predicton Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  {% if page and page.edit_url %}
+										<li><a href="{{ page.edit_url }}" class = "icon brands fa-github"></a></li>
+									  {% elif config.repo_url %}
+										<li><a href="{{ config.repo_url }}" class = "icon brands fa-github"></a></li>
+									  {% endif %}
+								  </ul>
+								</header>
+							<!-- Content -->
+								<section>
+										<!-- Markdown content -->
+									<div class="content">
+									{% block content %}
+										{{ page.content }}
+									{% endblock %}
+									   </div>
+								</section>
+						
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Additional Resources</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Glossary</h3>
+											<p>Learn common terms used within this guide</p>
+											<ul class="actions">
+												<li><a href="{{ './additional_information/glossary/glossary' |url }}" , class="button">Learn more</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Tutorials</h3>
+											<p> Discover tutorials and ways to use data</p>
+											<ul class="actions">
+												<li><a href="{{ './additional_information/glossary/glossary' |url }}" , class="button">Learn more</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Accessing Data</h3>
+											<p>Learn how to access CMC products</p>
+											<ul class="actions">
+												<li><a href="{{ './additional_information/glossary/glossary' |url }}" , class="button">Learn more</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+								<section> 
+									<header class="major">
+										<h2>Frequently Asked Questions</h2>
+									</header>
+									<details>
+										<br>
+										<summary> 
+											FAQ1 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ2 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ3 
+										</summary>
+										TEXT HERE
+									</details>	
+									
+								</section>
+							</div>
+						</div>
+						<!-- Section -->
+							
+							
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+							{% if 'search' in config['plugins'] %}
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action={{ "search.html"|url }}>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
+							{% endif %}
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									{%- block site_nav %}
+										<ul>
+										{%- if nav|length>1 %}
+											{%- for nav_item in nav %}
+												{%- if nav_item.children %}
+													<li>
+													<span class="opener">{{ nav_item.title }}</span>
+													<ul>
+													{%- for nav_item in nav_item.children %}
+														<a href="{{ nav_item.url|url }}" >{{ nav_item.title }}</a>
+													{%- endfor %}
+													</ul>
+													</li>
+													{%- else %}
+													<li>
+														<a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
+													</li>
+												{%- endif %}
+										{%- endfor %}
+									{%- endif %}
+								{%- endblock %}
+								</ul>
+								</nav>
+							<!-- Section -->
+
+							<!-- Footer -->
+				<footer id="footer">
+		
+				</footer>
+		</div>
+	</body>
+	
+		<!-- Scripts -->
+	{%- block libs %}	
+		<script>var base_url = '{{ base_url }}';</script>
+		<script src="{{ 'assets/js/jquery.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/browser.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/breakpoints.min.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/util.js'|url }}" defer></script>
+		<script src="{{ 'assets/js/main.js'|url }}" defer></script>
+	{%- endblock %}
+</html>

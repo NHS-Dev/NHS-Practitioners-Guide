@@ -84,7 +84,7 @@ tags:
 <details>
 <summary>What is the file structure and format?</summary>
 <br>
-<i> Currently system_name data is available in NetCDF file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats 
+<i> Currently system_name data is available in NetCDF file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats <i>
 <ul>
 <li> List items like this </li>
 <li> add <code> boxed words</code> like this 

@@ -65,8 +65,8 @@ tags:
 		</thead>
 		<tbody>
 			<tr>
-				<td>DISC</td>
-				<td>Dischard</td>
+				<td>-</td>
+				<td>-</td>
 				<td>-</td>
 				<td>-</td>
 				<td>-</td>
