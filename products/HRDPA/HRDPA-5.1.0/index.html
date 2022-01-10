@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>HRDPA - National Hydrological Service Practitioners Guide</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+		<link rel="stylesheet" href="../../../css/main.css" />
+	<!-- Meta tags -->
+    
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+	<!-- Favicon -->
+      <link rel="icon" href="../../../assets/favicon.png" />
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../../../index", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Prediction Products</a>
+									<ul class="icons">
+									<!-- github symbol -->
+									  
+										<li><a href="https://github.com/NHS-Dev/NHS-Practitioners-Guide" class = "icon brands fa-github"></a></li>
+									  
+								  </ul>
+								</header>
+							<!-- Content -->
+								<section>
+										<!-- Markdown content -->
+									<div class="content">
+									
+										<h2 id="high-resolution-deterministic-precipitation-analysis-system-capa-hrdpa"><strong>High Resolution Deterministic Precipitation Analysis System (CaPA-HRDPA)</strong></h2>
+<h3 id="overview"><strong>Overview</strong></h3>
+<p>
+
+CaPA-HRDPA is a high resolution deterministic precipitation analysis system that provides objective estimates of precipitation amounts for a specific domain by combining readings 
+from precipitation gauges, radar precipitation estimates (QPE's) and a trial field generated from a numerical weather prediction system (HRDPS). 
+
+</p>
+
+<p><strong> Current version: </strong> 5.1.0
+<br></p>
+<!-- ** Past versions: **
+
+* [x.x](./previous_versions/old_version.md)
+* [x.x](./previous_versions/old_version.md)
+ -->
+
+<h3 id="what-is-the-spatial-resolution-and-coverage-of-this-data"><strong>What is the spatial resolution and coverage of this data?</strong></h3>
+<p>
+
+The CaPA-HRDPA domain is exactly the same as the one for the national HRDPS. This 
+continental window covers all of Canada minus the most northern arctic islands. The south border of 
+the domain is located north of a line going from the northern boundary of California to South
+Carolina. CaPA-HRDPA has a spatial resolution of 2.5 km. 
+
+</p>
+
+<p><img alt="alt text" src="../domain-images/domain.PNG" /></p>
+<h3 id="what-is-available"><strong>What is available?</strong></h3>
+<details>
+<summary>What is the timestep and time period covered by this data? </summary>
+<br>
+<p> 
+HRDPA produces four sets of cumulative precipitation analyses (6-hour amounts per day) valid at synoptic hours (00, 06, 12, and 18Z) each day.
+HRDPA also produces two 24-hour precipitation amounts in step with the climatological day valid at 06 and 12 UTC. 
+</p>
+<p>
+A 'preliminary' analysis is completed 1 hour after the time of validity and another called 'final' is produced 7 hours later, which results in a total of 8 analyses for a day. 
+
+</p>
+</details>
+
+<details>
+<br>
+<summary>What are the outputs from this product? </summary>
+<h5>Outputs currently available</h5>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Variable </th>
+                <th>Variable long name</th>
+                <th>Unit </th>
+                <th>Level </th>
+                <th>Frequency  </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PR</td>
+                <td>Total precipitation </td>
+                <td>kg/m2</td>
+                <td>surface</td>
+                <td>6h</td>
+            </tr>
+            <tr>
+                <td>CFIA</td>
+                <td> Confidence Index of the Analysis</td>
+                <td>-</td>
+                <td>-</td>
+                <td>6h</td>
+            </tr>
+            <tr>
+                <td>PR</td>
+                <td>Total precipitation </td>
+                <td>kg/m2</td>
+                <td>surface</td>
+                <td>24h</td>
+            </tr>
+    </table>
+
+The field CFIA gives the weight of observations in the analysis value at grid points. Its value falls in a range from 0 to 1. 
+A value of 0 means that no observation has contributed to the value of the analysis, while a value 
+close to 1 means that the weight of neighboring observations is high. More confidence is placed on the analysis value where CFIA is high. 
+</div>
+</details>
+
+<details>
+<summary>How do I access the data? </summary>
+<br>
+<p> 
+There are multiple ways to access HRDPA. Currently, it is available on both <a href = "https://dd.weather.gc.ca/">  MSC Datamart </a> and <a href = "https://eccc-msc.github.io/open-data/msc-geomet/readme_en/">  MSC GeoMet </a>. 
+<br>
+<br>
+The data can also be access on the  <a href = "https://caspar-data.ca/">  Canadian Surface Prediction Archive (CaSPAr)  </a>, 
+which is an archive of numerical weather predictions issued by Environment and Climate Change Canada.
+</p>
+</details>
+
+<details>
+<summary>What is the file structure and format?</summary>
+<p>
+<br>
+<i> Currently HRDPA data is available in GRIB2 file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats </i>
+<br>
+<h5> HRPDA GRIB2 files follow the following naming convention: </h5>
+<br>
+<code> ORGANIZATION_PRODUCT_VARIABLE_ANALYSISWINDOW_LEVEL_GRID_YYYYMMDDHH_000 </code>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th> String </th>
+            <th> Description </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b> ORGANIZATION </b></td>
+            <td> Refers to the group that creates the files  </td>
+        </tr>
+        <tr>
+            <td><b> DATASET</b></td>
+            <td> Refers to the model. </td>
+        </tr>
+        <tr>
+            <td><b> VARIABLE </b></td>
+            <td> Refers to the variable of the analysis. For HRDPA, ACPC refers to the PR (precipitation) </td>
+        </tr>
+        <tr>
+            <td><b> ANALYSISWINDOW </b></td>
+            <td>- </td>
+        </tr>
+        <tr>
+            <td><b> GRID </b></td>
+            <td>Refers to the vertical coordinate (pressure level, surface, sub-surface, etc.). sfc = Surface</td>
+        </tr>
+        <tr>
+            <td><b> YYYYMMDDHH </b></td>
+            <td> The issue date and time </td>
+        </tr>
+        <tr>
+            <td><b> 000 </b></td>
+            <td> Would normally refer to the forecast hour, but is not applicable as this product is an analysis  </td>
+        </tr>
+    </table>
+</details>
+
+<details>
+<summary> What is the status of this product? </summary>
+<br>
+<b>Current Status</b>: Operational
+<br>
+<p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Run type </th>
+                <th>Valid dates</th>
+                <th>Product type </th>
+                <th>Comment </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Operational </td>
+                <td> 2021/12/01 to Present</td>
+                <td>Analysis</td>
+                <td> Fully operational IC3 product suite</td>
+            </tr>
+            <tr>
+                <td>Parallel </td>
+                <td> 2021/09/15 to 2021/12/01</td>
+                <td>Analysis</td>
+                <td> Suite ran in parallel</td>
+            </tr>
+    </table>
+
+</details>
+
+<h3 id="where-can-i-find-additional-information"><strong>Where can I find additional information?</strong></h3>
+<p><strong> <a href="documentation/documentation-name">Technical note</a> </strong>
+<br>
+<strong> <a href="./">Specifications</a> </strong>
+<br> 
+<strong> <a href="./path/to/doc">Change log</a> </strong></p>
+<h3 id="product-license"><strong>Product license</strong></h3>
+<p>The <a href="../../../license/license/">End-User Licence for Environment and Climate Change Canada's Data Servers</a> specifies the conditions of use of this data.</p>
+									
+									   </div>
+								</section>
+						
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Additional Resources</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Glossary</h3>
+											<p>Learn common terms used within this guide</p>
+											<ul class="actions">
+												<li><a href="../../../additional_information/glossary/glossary" , class="button">Learn more</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Tutorials</h3>
+											<p> Discover tutorials and ways to use data</p>
+											<ul class="actions">
+												<li><a href="../../../additional_information/glossary/glossary" , class="button">Learn more</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Accessing Data</h3>
+											<p>Learn how to access CMC products</p>
+											<ul class="actions">
+												<li><a href="../../../additional_information/glossary/glossary" , class="button">Learn more</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+								<section> 
+									<header class="major">
+										<h2>Frequently Asked Questions</h2>
+									</header>
+									<details>
+										<br>
+										<summary> 
+											FAQ1 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ2 
+										</summary>
+										TEXT HERE
+									</details>
+									<details>
+										<br>
+										<summary> 
+											FAQ3 
+										</summary>
+										TEXT HERE
+									</details>	
+									
+								</section>
+							</div>
+						</div>
+						<!-- Section -->
+							
+							
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+							
+							  <div role="search">
+							  <section id="search" class="alt">
+								    <form id="mkdocs-search-query" action=../../../search.html>
+									<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search", aria-label="Search through site content" />
+								  </form>
+							  </section>
+							</div>
+							
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+										<ul>
+													<li>
+														<a href="../../.." class="nav-link">Home</a>
+													</li>
+													<li>
+														<a href="../../../about/" class="nav-link">About</a>
+													</li>
+													<li>
+														<a href="../../../available-datasets/" class="nav-link">Available Data</a>
+													</li>
+													<li>
+													<span class="opener">Data Access</span>
+													<ul>
+														<a href="../../../coming-soon/" >Data Mart</a>
+														<a href="../../../coming-soon/" >Geomet</a>
+														<a href="../../../data_access/file_formats/file_formats/" >File Formats and naming</a>
+													</ul>
+													</li>
+													<li>
+														<a href="../../../coming-soon/" class="nav-link">Data Usage and Tutorials</a>
+													</li>
+													<li>
+													<span class="opener">Additional Information</span>
+													<ul>
+														<a href="../../../additional_information/glossary/glossary/" >Glossary</a>
+														<a href="../../../additional_information/operational-statuses/operational-status/" >Operation Statuses</a>
+														<a href="../../../license/license/" >License</a>
+													</ul>
+													</li>
+								</ul>
+								</nav>
+							<!-- Section -->
+
+
+							<!-- Footer -->
+				<footer id="footer">
+				</footer>
+		</div>
+	</body>
+	
+		<!-- Scripts -->
+	
+	  <script>
+		// Current page data
+		var mkdocs_page_name = "HRDPA";
+		var mkdocs_page_input_path = "products/HRDPA/HRDPA-5.1.0.md";
+		var mkdocs_page_url = "/NHS-Practitioners-Guide/products/HRDPA/HRDPA-5.1.0/";
+	  </script>	
+	   
+		<script>var base_url = '../../..';</script>
+		<script src="../../../assets/js/jquery.min.js" defer></script>
+		<script src="../../../assets/js/browser.min.js" defer></script>
+		<script src="../../../assets/js/breakpoints.min.js" defer></script>
+		<script src="../../../assets/js/util.js" defer></script>
+		<script src="../../../assets/js/main.js" defer></script>
+</html>

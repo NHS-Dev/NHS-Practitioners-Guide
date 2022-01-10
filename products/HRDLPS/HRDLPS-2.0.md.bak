@@ -158,9 +158,9 @@ HRDLPS is run on a 2.5-km national grid.
 <li> <code> TDK </code> Contains the dew point temperature at 1.5 m above ground level. </li>
 <li> <code> TG </code> Contains the surface temperature. </li>
 <li> <code> TJ </code> Contains the air temperature 1.5 m above ground level </li>
-<li> <code> TRAF </code> Contains the surface runoff amount divided into 4 surface types; "ice_free_land", "land_ice", "ice_free_sea","lake_ice_or_sea_ice", "all_area_types"</li>
+<li> <code> TRAF </code> Contains the surface runoff amount divided into 5 surface types; "ice_free_land", "land_ice", "ice_free_sea","lake_ice_or_sea_ice", "all_area_types"</li>
 <li><code> WSOL_DBS</code> Contains the volumetric water content of soil at 7 depths below surface (0.025, 0.075, 0.15, 0.3, 0.7, 1.5, 2.5 m ).</li>
-<li> <code> WT </code> Accumulation of land surface evaporation </li>
+<li> <code> WT </code> Contains the surface area fraction for each of the 5 surface types; "ice_free_land", "land_ice", "ice_free_sea","lake_ice_or_sea_ice", "all_area_types" </li>
 
 </ul>
 <br>

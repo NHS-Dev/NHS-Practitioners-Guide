@@ -90,7 +90,7 @@ CaLDAS-Sat uses 0-6 h HRDPS atmospheric forcing four times daily (00, 08, 12, 18
 				<td>WSOL </td>
 				<td>volumetric water content of soil</td>
 				<td>m3 m-3</td>
-				<td> 0.05, 0.1, 0.2, 0.4, 1, 2, 3 m (depth below surface)</td>
+				<td> 0.025, 0.075, 0.15, 0.3, 0.7, 1.5, 2.5 m(depth below surface)</td>
 			</tr>
 		</tbody>
 	</table>
@@ -115,7 +115,7 @@ CaLDAS-Sat uses 0-6 h HRDPS atmospheric forcing four times daily (00, 08, 12, 18
 <li><code>TD_AGL</code> Contains the dew point temperature at 1.5 m above ground level. </li>
 <li><code>TG_SFC</code> Contains the surface temperature. </li>
 <li><code>TT_AGL</code> Contains the surface temperature at 1.5 m above ground level.</li>
-<li><code>WSOL_DBS</code> Contains the volumetric water content of soil at 7 depths below surface (0.05, 0.1, 0.2, 0.4, 1, 2, 3 m ).</li>
+<li><code>WSOL_DBS</code> Contains the volumetric water content of soil at 7 depths below surface (0.025, 0.075, 0.15, 0.3, 0.7, 1.5, 2.5 m ).</li>
 </ul>
 </details>
 

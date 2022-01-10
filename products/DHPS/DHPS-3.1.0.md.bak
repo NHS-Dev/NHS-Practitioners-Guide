@@ -166,7 +166,7 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 <details>
 <summary>What is the file structure and format?</summary>
 <br>
-<i> Currently DHPS data is available in NetCDF file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats 
+<i> Currently DHPS data is available in NetCDF file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats  </i>
 <br>
 <br>
 <h4> <i>.tar</i> package for each run contains the following: </h4>
@@ -181,8 +181,6 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 <li><code> Waterbody-ID </code> This file contains all bodies of water that are processed by the river-routing model explicitly. They are indexed numerically, starting at one. There are separate indexes for each basin, so as a result, the are six “1”s in this file. For additional details, please see the technical note.  </li>
 <li><code> River-Discharge</code> Forecasted river discharge. There are a total of 144 files, one for each forecast hour.  </li>
 <li> Forecasts of 12-hour accumulations of spatially averaged evaporation (<code>Evap-SpatialAvg</code>), precipitation (<code>Precip-SpatialAvg</code>), and runoff(<code> Total-Runoff-Avg </code>). There are 12 files,one for every 12 forecast hours from 12 to 144 hours. (012H to 144H). Evaporation and precipitation are averaged over the lake area. Runoff represents the total runoff into a body of water from its immediate watershed, distributed over the surface of that body of water or its immediate watershed. In the resulting files, every lake grid cell contains the spatial-temporal average value for the given variable.</li>
-<li><code> Storage-LowZone </code> contains 
-
 </ul>
 </details>
 
