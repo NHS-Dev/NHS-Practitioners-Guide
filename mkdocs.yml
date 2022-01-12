@@ -20,24 +20,18 @@ nav:
     - Home: index.md
     - About: about.md
     - Available Data: available-datasets.md
-    # - TEMP REMOVED:
-        # - NSRPS: products/NSRPS/nsrps-3.1.0.md
-        # - DHPS: products/DHPS/DHPS-3.1.0.md
-    # - Real-time Analysis:
-        # - DHPS: products/DHPS/DHPS-3.1.0.md
     - Data Access: 
         - Data Mart: coming-soon.md
         - Geomet: coming-soon.md 
-        - File Formats: data_access/file_formats/file_formats.md
+        - File Formats and naming: data_access/file_formats/file_formats.md
     - Data Usage and Tutorials: coming-soon.md 
     - Additional Information: 
         - Glossary: additional_information/glossary/glossary.md 
         - Operation Statuses: additional_information/operational-statuses/operational-status.md
         - License: license/license.md
 
-
 theme: 
-    name: material
+    name: null
     custom_dir: custom_theme
     favicon: assets/favicon.png
     static_templates:
@@ -50,9 +44,6 @@ theme:
     include_search_page: true
     search_index_only: false
       
-features:
-    - search.highlight
-    - search.suggest
     
         
 

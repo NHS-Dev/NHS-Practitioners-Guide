@@ -6,9 +6,9 @@ tags:
 - tags
 ---
 
-# **System name** 
+## **System name** 
 
-## **Overview**
+### **Overview**
 
 <p>
 
@@ -24,7 +24,7 @@ tags:
 * [x.x](./previous_versions/old_version.md)
 
 
-## **What is the spatial resolution and coverage of this data?**
+### **What is the spatial resolution and coverage of this data?**
 
 <p>
 
@@ -101,7 +101,7 @@ tags:
 <p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>
 
-## **Where can I find additional information?**
+### **Where can I find additional information?**
 
 ** [Technical note](documentation/documentation-name) **
 <br>
@@ -109,7 +109,7 @@ tags:
 <br> 
 ** [Change log](./path/to/doc) **
 
-## **Product license**
+### **Product license**
 
 The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../license/license.md) specifies the conditions of use of this data.
 

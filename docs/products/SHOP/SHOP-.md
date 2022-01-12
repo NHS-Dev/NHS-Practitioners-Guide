@@ -3,22 +3,18 @@ title: SHOP
 template: content-template.html
 ---
 
-## **Operational Hydrodynamic Prediction System (OHPS)**
+## **SHOP(Simulation Hydrodynamique OPérationnelle)**
 
 ### **Overview**
 
 <p>
 
-OHPS is an operational hydrodynamic modeling tool which can produce numerical analyses and simulations of various parameters of interest
+SHOP (Simulation Hydrodynamique OPérationnelle) is an operational hydrodynamic modeling tool which can produce numerical analyses and simulations of various parameters of interest
 for the St. Lawrence river and its tributaries. 
 </p>
 
-** Current version: ** x.x.x
+** Current version: ** 1.0.0
 <br>
-** Past versions: **
-
-* [x.x](./previous_versions/old_version.md)
-* [x.x](./previous_versions/old_version.md)
 
 
 ### **What is the spatial resolution and coverage of this data?**
@@ -37,7 +33,7 @@ The analyses are produced for the portion of the St. Lawrence found between Mont
 <details>
 <summary>What is the timestep and time period covered by this data? </summary>
 <br>
-<p> describe temporal resolution here </p>
+<p> SHOP </p>
 </details>
 
 
@@ -60,7 +56,7 @@ The analyses are produced for the portion of the St. Lawrence found between Mont
 <details>
 <summary> What is the status of this product? </summary>
 <br>
-<b>Current Status</b>: Experimental
+<b>Current Status</b>: Operational
 <br>
 <p> click  <a href = "../../../additional_information/Operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
 </details>

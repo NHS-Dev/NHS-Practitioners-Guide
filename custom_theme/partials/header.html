@@ -1,0 +1,11 @@
+<header id="header">
+	<a href="{{ './' |url }}", class="logo"><strong>NHS Practitioner's Guide</strong> to CMC Hydrological Prediction Products</a>
+	<ul class="icons">
+	<!-- github symbol -->
+	  {% if page and page.edit_url %}
+		<li><a href="{{ page.edit_url }}" class = "icon brands fa-github"></a></li>
+	  {% elif config.repo_url %}
+		<li><a href="{{ config.repo_url }}" class = "icon brands fa-github"></a></li>
+	  {% endif %}
+  </ul>
+</header>

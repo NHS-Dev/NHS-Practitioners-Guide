@@ -1,0 +1,31 @@
+<div id="sidebar">
+	<div class="inner">
+
+		<!-- Search -->
+		{% if 'search' in config['plugins'] %}
+			<div role="search">
+			<section id="search" class="alt", data-toggle="modal" >
+				<form id="mkdocs-search-query" action={{ "search.html"|url }}>
+					<input name="q" id="mkdocs-search-query" type="Search" placeholder="Search" autocomplete = "off" />
+				</form>
+			</section>
+			</div>
+		{% endif %}
+		<!-- Menu -->
+		{%- block nav %}
+			{% include "partials/nav.html" %}
+		{% endblock %}
+		<!-- contact section  -->
+		<section>
+			<header class="major">
+				<h2>Contact information</h2>
+			</header>
+			<p>contact description</p>
+			<ul class="contact">
+				<li class="icon solid fa-envelope"><a href="#"> email< /a></li>
+			</ul>
+		</section>
+		<!-- Footer -->
+		{% include "partials/footer.html" %}
+</div>
+</div>

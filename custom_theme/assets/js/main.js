@@ -1,8 +1,39 @@
-/*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+function getSearchTerm() {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == 'q') {
+            return sParameterName[1];
+        }
+    }
+}
+
+$(document).ready(function() {
+
+    applyTopPadding();
+
+    var search_term = getSearchTerm(),
+        $search_modal = $('#mkdocs_search_modal'),
+        $keyboard_modal = $('#mkdocs_keyboard_modal');
+
+    if (search_term) {
+        $search_modal.modal();
+    }
+
+    // make sure search input gets autofocus every time modal opens.
+    $search_modal.on('shown.bs.modal', function() {
+        $search_modal.find('#mkdocs-search-query').focus();
+    });
+
+    // Close search modal when result is selected
+    // The links get added later so listen to parent
+    $('#mkdocs-search-results').click(function(e) {
+        if ($(e.target).is('a')) {
+            $search_modal.modal('hide');
+        }
+    });
+	  });
 
 (function($) {
 
@@ -258,5 +289,4 @@
 
 				});
 			});
-
 })(jQuery);

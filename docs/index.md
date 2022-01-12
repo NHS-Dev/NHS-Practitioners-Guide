@@ -1,5 +1,5 @@
 ---
-title: Coming soon 
+title: Home
 template: home.html
 ---
 
@@ -9,5 +9,3 @@ template: home.html
 
 <p>This guide provides information on the different hydrological modelling systems and prediction products available through ECCC, including how to access them, apply them to different uses.  It also includes tutorials on how to apply the different products, using a variety of tools, and to various uses.  The primary audience for this product are operational users involved in 
 operational flood forecasting and early warning, water and reservoir management. </p>
-
-

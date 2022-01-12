@@ -42,7 +42,7 @@ HREPA provides analyses and ensemble forecasts over Canada and the United States
 <details>
 <summary>What is the timestep and time period covered by this data? </summary>
 <br>
-<p> HREPA produces four sets of cumulative precipitation analyses every 6-hours (00, 06, 12, and 18Z) each day.  </p>
+<p> HREPA produces four sets of cumulative precipitation analyses (6-hour amounts per day) valid at synoptic hours (00, 06, 12, and 18Z) each day.  </p>
 </details>
 
 
