@@ -1,5 +1,0 @@
-Attribute,Description
-Product Type ,Forecast 
-Temporal Resolution,Hourly
-Frequency,2x / day at 00 and 12 UT
-Lead-time,6 days (144 hrs)
