@@ -19,7 +19,7 @@ analyses for initial conditions and forcing fields from HRDPS and GDPS. HRDLPS g
 
 </p>
 
-** Current version: ** 2.1 2.0.0 
+** Current version: ** 2.0.0
 <br>
 <!-- ** Past versions: **
 
@@ -177,9 +177,9 @@ HRDLPS is run on a 2.5-km national grid.
 </details>
 
 ### **Where can I find additional information?**
-** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdlps-200_e.pdf > Technical Note </a></b>
 <br>
-** [Specifications](./) **
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDLPS_2.0.0_e.pdf > Technical Specifications </a></b>
 <br>
 ** [Change log](../Status_definitions/status.md) **
 

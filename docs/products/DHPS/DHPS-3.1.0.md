@@ -21,6 +21,10 @@ throughout the domain. DHPS is based on the Watroute routing scheme, and has the
 DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
 observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
 </p>
+<p>
+<br>
+DHPS produces hourly estimates, both analysed and forecast, of river discharge, the volume of water stored in the river channel or at the outlet of an explicitly represented natural lake or regulated reservoir, and the depth of the water in the subterranean reservoir.
+</p>
 
 ** Current version: ** 3.1.0
 <br>
@@ -58,7 +62,8 @@ DHPS also estimates the water budget of large specified water bodies, which incl
 <details>
 <summary>What is the timestep and time period covered by this data? </summary>
 <br>
-Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast. 
+Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation cycle followed by a 6-day forecast. DHPS produces hourly discharge forecasts, as well
+as 12-h forecasts and 24-h analyses of hydrological variables.
 </details>
 
 <details>
@@ -230,9 +235,9 @@ Twice a day, launching at 00 and 12 UTC, DHPS performs a 12-h data assimilation 
 </div>
 </details>
 ### **Where can I find additional information?**
-** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_dhps-310_20211130_e.pdf > Technical Note </a></b>
 <br>
-** [Specifications](./) **
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.1.0_e.pdf > Technical Specifications </a></b>
 <br>
 ** [Change log](../Status_definitions/status.md) **
 

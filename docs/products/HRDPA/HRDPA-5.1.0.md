@@ -109,7 +109,7 @@ close to 1 means that the weight of neighboring observations is high. More confi
 There are multiple ways to access HRDPA. Currently, it is available on both <a href = "https://dd.weather.gc.ca/">  MSC Datamart </a> and <a href = "https://eccc-msc.github.io/open-data/msc-geomet/readme_en/">  MSC GeoMet </a>. 
 <br>
 <br>
-The data can also be access on the  <a href = "https://caspar-data.ca/">  Canadian Surface Prediction Archive (CaSPAr)  </a>, 
+The data can also be accessed on the  <a href = "https://caspar-data.ca/">  Canadian Surface Prediction Archive (CaSPAr)  </a>, 
 which is an archive of numerical weather predictions issued by Environment and Climate Change Canada.
 </p>
 </details>
@@ -199,10 +199,10 @@ which is an archive of numerical weather predictions issued by Environment and C
 
 ### **Where can I find additional information?**
 
-** [Technical note](documentation/documentation-name) **
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_capa_hrdpa_e.pdf > Technical Note </a></b>
 <br>
-** [Specifications](./) **
-<br> 
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPA_5.1.0_e.pdf> Technical Specifications </a></b>
+<br>
 ** [Change log](./path/to/doc) **
 
 ### **Product license**

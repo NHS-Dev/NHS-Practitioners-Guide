@@ -102,10 +102,10 @@ HREPA provides analyses and ensemble forecasts over Canada and the United States
 
 ### **Where can I find additional information?**
 
-** [Technical note](documentation/documentation-name) **
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_capa_hrepa-130_e.pdf > Technical Note </a></b>
 <br>
-** [Specifications](./) **
-<br> 
+<b> <a href = https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HREPA_1.3.0_e.pdf > Technical Specifications </a></b>
+<br>
 ** [Change log](./path/to/doc) **
 
 ### **Product license**

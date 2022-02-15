@@ -1,9 +1,6 @@
 ---
 title: File Formats 
 template: about-template.html
-tags: 
-- NetCDF
-- FST
 ---
 <header class="major">
 	<h2> CMC file naming convetions </h2>
@@ -60,7 +57,6 @@ NetCDF data has an <i> .nc </i> extension.
 </p>
 
 
-<h3> Using NetCDF data </h3>
 
 <h3> <i>.tar</i> package contents  </h3>
 
@@ -68,3 +64,5 @@ NetCDF data has an <i> .nc </i> extension.
 ````
 YYYYMMDDHH_ORGANIZATION _MODEL.nc.tar
 ````
+
+<h3> Using NetCDF data </h3>
