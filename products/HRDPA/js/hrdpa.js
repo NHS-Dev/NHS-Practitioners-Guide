@@ -1,7 +1,7 @@
 const parser = new DOMParser();
 
 async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=2.16.4&LAYERS=HRDPA.24P_PR')
+  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=2.16.4&LAYERS=HRDPA.24F_PR')
   let data = await response.text().then(
     data => {
       let xml = parser.parseFromString(data, 'text/xml')
@@ -31,7 +31,7 @@ let layers = [
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HRDPA.24P_PR', 'TILED': true},
+        params: {'LAYERS': 'HRDPA.24F_PR', 'TILED': true},
       })
     })
   ]

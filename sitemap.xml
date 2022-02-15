@@ -2,157 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/about/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/available-datasets/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/coming-soon/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/additional_information/LDAS-1.0/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/additional_information/glossary/glossary/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/additional_information/operational-statuses/operational-status/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/data_access/DataMart/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/data_access/file_formats/file_formats/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/license/license/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/CALDAS-SAT/CALDAS-SAT-2.1.3/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/CAPA/CAPA-Systems/</loc>
-         <lastmod>2022-01-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/CAPA/documentation/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/CAPA/domain-images/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/CAPA/previous_versions/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/DHPS/DHPS-3.1.0/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/HRDLPS/HRDLPS-2.0/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/HRDPA/HRDPA-5.1.0/</loc>
-         <lastmod>2022-01-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/HRDPA/documentation/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/HRDPA/domain-images/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/HRDPA/previous_versions/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/HREPA/HREPA-1.3.0/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/NSRPS/nsrps-3.1.0/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/RDPA/RDPA-5.2.0/</loc>
-         <lastmod>2022-01-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/RDPA/documentation/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/RDPA/domain-images/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/RDPA/previous_versions/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/RDRS/system_template_1.0/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/RDRS/documentation/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/RDRS/previous_versions/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/products/SHOP/SHOP-/</loc>
-         <lastmod>2022-01-12</lastmod>
+         <lastmod>2022-02-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
