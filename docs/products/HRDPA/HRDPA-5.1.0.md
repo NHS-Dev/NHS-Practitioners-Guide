@@ -31,7 +31,7 @@ from precipitation gauges, radar precipitation estimates (QPE's) and a trial fie
 
 <p>
 
-The CaPA-HRDPA domain is exactly the same as the one for the national HRDPS. This 
+The CaPA-HRDPA domain is exactly the same as the national HRDPS domain. This 
 continental window covers all of Canada minus the most northern arctic islands. The south border of 
 the domain is located north of a line going from the northern boundary of California to South
 Carolina. CaPA-HRDPA has a spatial resolution of 2.5 km. 
