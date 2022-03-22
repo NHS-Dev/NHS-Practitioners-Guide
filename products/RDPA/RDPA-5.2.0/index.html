@@ -57,13 +57,13 @@ a numerical weather prediction system (RDRS).
 </p>
 
 <p><strong> Current version: </strong> 5.2.0
-<br></p>
-<!-- ** Past versions: **
-
-* [x.x](./previous_versions/old_version.md)
-* [x.x](./previous_versions/old_version.md)
- -->
-
+<br>
+&lt;!-- <strong> Past versions: </strong></p>
+<ul>
+<li><a href="./previous_versions/old_version.md">x.x</a></li>
+<li><a href="./previous_versions/old_version.md">x.x</a>
+ --&gt;</li>
+</ul>
 <h3 id="what-is-the-spatial-resolution-and-coverage-of-this-data"><strong>What is the spatial resolution and coverage of this data?</strong></h3>
 <p>
 RDPA covers continental North America, and has a spatial resolution of 10-km.
@@ -72,11 +72,13 @@ RDPA covers continental North America, and has a spatial resolution of 10-km.
 <!-- ![alt text](domain-images/domain.PNG) -->
 
 <div id="map" style="height: 400px;"></div>
+
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="play" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
   <button id="pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-pause" style="padding: 0rem 1rem"></i></button>
   <span id="info" style="padding-left: 0.5rem;"></span>
 </div>
+
 <p><br></p>
 <h3 id="what-is-available"><strong>What is available?</strong></h3>
 <details>
@@ -87,7 +89,7 @@ HRDPA produces four sets of cumulative precipitation analyses (6-hour amounts pe
 HRDPA also produces two 24-hour precipitation amounts in step with the climatological day valid at 06 and 12 UTC. 
 </p>
 <p>
-A 'preliminary' analysis is completed 1 hour after the time of validity and another called 'final' is produced 7 hours later, which results in a total of 8 analyses for a day. 
+A 'preliminary' analysis is completed 1 hour after the time of validity and another called 'final' is produced 7 hours later, which results in a total of 8 analyses for a day.
 
 </p>
 </details>
@@ -132,7 +134,7 @@ close to 1 means that the weight of neighboring observations is high. More confi
 <summary>How do I access the data? </summary>
 <br>
 <p> 
-There are multiple ways to access HRDPA. Currently, it is available on both <a href = "https://dd.weather.gc.ca/">  MSC Datamart </a> and <a href = "https://eccc-msc.github.io/open-data/msc-geomet/readme_en/">  MSC GeoMet </a>. 
+There are multiple ways to access RDPA. Currently, it is available on both <a href = "https://dd.weather.gc.ca/">  MSC Datamart </a> and <a href = "https://eccc-msc.github.io/open-data/msc-geomet/readme_en/">  MSC GeoMet </a>. 
 <br>
 <br>
 The data can also be accessed on the  <a href = "https://caspar-data.ca/">  Canadian Surface Prediction Archive (CaSPAr)  </a>, 
@@ -144,9 +146,9 @@ which is an archive of numerical weather predictions issued by Environment and C
 <summary>What is the file structure and format?</summary>
 <p>
 <br>
-<i> Currently HRDPA data is available in GRIB2 file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats </i>
+<i> Currently RDPA data is available in GRIB2 file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats </i>
 <br>
-<h5> HRPDA GRIB2 files follow the following naming convention: </h5>
+<h5> RPDA GRIB2 files follow the following naming convention: </h5>
 <br>
 <code> ORGANIZATION_PRODUCT_VARIABLE_OBSERVATIONCUTOFFTIME_LEVEL_GRID_YYYYMMDDHH_000 </code>
 </p>
@@ -231,7 +233,8 @@ which is an archive of numerical weather predictions issued by Environment and C
 <h3 id="product-license"><strong>Product license</strong></h3>
 <p>The <a href="../../../license/license/">End-User Licence for Environment and Climate Change Canada's Data Servers</a> specifies the conditions of use of this data.</p>
 <!-- Map scripts  -->
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" /></p>
+
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
 <script>
@@ -251,7 +254,7 @@ which is an archive of numerical weather predictions issued by Environment and C
         js.src = "../js/rdpa.js";
     }
     head.appendChild(js);
-</script>
+</script></p>
 		</div>
 		</section>
 		<!-- additional resources -->

@@ -56,17 +56,17 @@ from precipitation gauges, radar precipitation estimates (QPE's) and a trial fie
 </p>
 
 <p><strong> Current version: </strong> 5.1.0
-<br></p>
-<!-- ** Past versions: **
-
-* [x.x](./previous_versions/old_version.md)
-* [x.x](./previous_versions/old_version.md)
- -->
-
+<br>
+&lt;!-- <strong> Past versions: </strong></p>
+<ul>
+<li><a href="./previous_versions/old_version.md">x.x</a></li>
+<li><a href="./previous_versions/old_version.md">x.x</a>
+ --&gt;</li>
+</ul>
 <h3 id="what-is-the-spatial-resolution-and-coverage-of-this-data"><strong>What is the spatial resolution and coverage of this data?</strong></h3>
 <p>
 
-The CaPA-HRDPA domain is exactly the same as the one for the national HRDPS. This 
+The CaPA-HRDPA domain is exactly the same as the national HRDPS domain. This 
 continental window covers all of Canada minus the most northern arctic islands. The south border of 
 the domain is located north of a line going from the northern boundary of California to South
 Carolina. CaPA-HRDPA has a spatial resolution of 2.5 km. 
@@ -74,12 +74,15 @@ Carolina. CaPA-HRDPA has a spatial resolution of 2.5 km.
 </p>
 
 <!-- ![alt text](domain-images/domain.PNG) -->
+
 <div id="map" style="height: 400px;"></div>
+
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="play" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
   <button id="pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-pause" style="padding: 0rem 1rem"></i></button>
   <span id="info" style="padding-left: 0.5rem;"></span>
 </div>
+
 <p><br></p>
 <h3 id="what-is-available"><strong>What is available?</strong></h3>
 <details>
@@ -90,7 +93,7 @@ HRDPA produces four sets of cumulative precipitation analyses (6-hour amounts pe
 HRDPA also produces two 24-hour precipitation amounts in step with the climatological day valid at 06 and 12 UTC. 
 </p>
 <p>
-A 'preliminary' analysis is completed 1 hour after the time of validity and another called 'final' is produced 7 hours later, which results in a total of 8 analyses for a day. 
+A 'preliminary' analysis is completed 1 hour after the time of validity and another called 'final' is produced 7 hours later, which results in a total of 8 analyses for a day.
 
 </p>
 </details>
@@ -236,8 +239,8 @@ which is an archive of numerical weather predictions issued by Environment and C
 <strong> <a href="./path/to/doc">Change log</a> </strong></p>
 <h3 id="product-license"><strong>Product license</strong></h3>
 <p>The <a href="../../../license/license/">End-User Licence for Environment and Climate Change Canada's Data Servers</a> specifies the conditions of use of this data.</p>
-<!-- Map scripts  -->
-<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" /></p>
+<p><!-- Map scripts  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
 <script>
@@ -257,7 +260,7 @@ which is an archive of numerical weather predictions issued by Environment and C
         js.src = "../js/hrdpa.js";
     }
     head.appendChild(js);
-</script>
+</script></p>
 		</div>
 		</section>
 		<!-- additional resources -->
