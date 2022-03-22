@@ -100,7 +100,7 @@ close to 1 means that the weight of neighboring observations is high. More confi
 <summary>How do I access the data? </summary>
 <br>
 <p> 
-There are multiple ways to access HRDPA. Currently, it is available on both <a href = "https://dd.weather.gc.ca/">  MSC Datamart </a> and <a href = "https://eccc-msc.github.io/open-data/msc-geomet/readme_en/">  MSC GeoMet </a>. 
+There are multiple ways to access RDPA. Currently, it is available on both <a href = "https://dd.weather.gc.ca/">  MSC Datamart </a> and <a href = "https://eccc-msc.github.io/open-data/msc-geomet/readme_en/">  MSC GeoMet </a>. 
 <br>
 <br>
 The data can also be accessed on the  <a href = "https://caspar-data.ca/">  Canadian Surface Prediction Archive (CaSPAr)  </a>, 
@@ -112,9 +112,9 @@ which is an archive of numerical weather predictions issued by Environment and C
 <summary>What is the file structure and format?</summary>
 <p>
 <br>
-<i> Currently HRDPA data is available in GRIB2 file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats </i>
+<i> Currently RDPA data is available in GRIB2 file format, click   <a href = "../../../data_access/file_formats/file_formats">  here  </a>  information on file formats </i>
 <br>
-<h5> HRPDA GRIB2 files follow the following naming convention: </h5>
+<h5> RPDA GRIB2 files follow the following naming convention: </h5>
 <br>
 <code> ORGANIZATION_PRODUCT_VARIABLE_OBSERVATIONCUTOFFTIME_LEVEL_GRID_YYYYMMDDHH_000 </code>
 </p>
