@@ -21,6 +21,7 @@ throughout the domain. DHPS is based on the Watroute routing scheme, and has the
 DHPS also assimilates streamflow observations during the data assimilation cycle. Currently, DHPS  assimilates 
 observations from ECCC’s Water Survey of Canada, USGS, and the provincial networks of river gauges in Quebec and Alberta.
 </p>
+
 <p>
 <br>
 DHPS produces hourly estimates, both analysed and forecast, of river discharge, the volume of water stored in the river channel or at the outlet of an explicitly represented natural lake or regulated reservoir, and the depth of the water in the subterranean reservoir.

@@ -1,0 +1,6 @@
+##
+# Files matching the following patterns in the local clone will be ignored when committing
+##
+site/
+.github/ISSUE_TEMPLATE/product-or-additional-information.md
+.github/ISSUE_TEMPLATE/tutorial.md
