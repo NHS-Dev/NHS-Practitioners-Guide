@@ -4,7 +4,7 @@ template: content-template.html
 ---
 
 
-# Glossary
+# Glossary and Acronym List
 
 #### Definitions 
 -------------------------------------------------------------------------
@@ -30,6 +30,26 @@ definition
 <p>
 
 definition 
+
+</p>
+</dd>
+</p>
+
+#### Acronyms 
+-------------------------------------------------------------------------
+
+<dl>
+<dt><b>NHS</b></dt>
+<dd>
+<p>
+National Hydrological Service
+
+
+<dl>
+<dt><b>CMC</b></dt>
+<dd>
+<p>
+Canadian Meteorological Centre
 
 </p>
 </dd>
