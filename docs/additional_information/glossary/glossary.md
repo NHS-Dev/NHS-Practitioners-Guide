@@ -44,13 +44,14 @@ definition
 <p>
 National Hydrological Service
 
-
-<dl>
+</p>
+</dd>
 <dt><b>CMC</b></dt>
 <dd>
 <p>
-Canadian Meteorological Centre
+
+Canadian Meteorological Service 
 
 </p>
 </dd>
-</d1>
+</p>
