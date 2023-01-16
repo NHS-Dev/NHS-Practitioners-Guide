@@ -24,7 +24,7 @@ nav:
         - Data Mart: coming-soon.md
         - Geomet: coming-soon.md 
         - File Formats and naming: data_access/file_formats/file_formats.md
-    - Data Usage and Tutorials: coming-soon.md 
+    - Data Usage and Tutorials: tutorials.md 
     - Additional Information: 
         - Glossary: additional_information/glossary/glossary.md 
         - Operation Statuses: additional_information/operational-statuses/operational-status.md
