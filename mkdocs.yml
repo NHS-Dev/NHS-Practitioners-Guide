@@ -19,7 +19,7 @@ edit_uri: ""
 nav: 
     - Home: index.md
     - About: about.md
-    - Available Data: available-datasets.md
+    - Data Products: available-datasets.md
     - Data Access: 
         - Data Mart: coming-soon.md
         - Geomet: coming-soon.md 
