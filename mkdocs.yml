@@ -21,13 +21,13 @@ nav:
     - About: about.md
     - Data Products: available-datasets.md
     - Data Access: 
-        - Data Mart: coming-soon.md
-        - Geomet: coming-soon.md 
-        - File Formats and naming: data_access/file_formats/file_formats.md
+        - Data Mart: data_access/DataMart.md
+        - Geomet: data_access/GeoMet.md 
     - Data Usage and Tutorials: tutorials.md 
     - Additional Information: 
         - Glossary: additional_information/glossary/glossary.md 
         - Operation Statuses: additional_information/operational-statuses/operational-status.md
+        - Theme Pages: additional_information/ThemePages/snow.md
         - License: license/license.md
 
 theme: 
