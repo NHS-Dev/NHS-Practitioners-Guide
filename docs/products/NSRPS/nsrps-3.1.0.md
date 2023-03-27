@@ -3,15 +3,14 @@ title: NSRPS
 template: content-template.html
 tags: 
 - hydrology
-- disharge
+- discharge
 ---
 
 ## **National Surface and River Prediction System (NSRPS)**
 
 ### **Overview**
 
-<p> NSRPS is a Complete hydro-meteorological prediction system, which aims to provide the best possible representation of the current 
-and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
+<p> NSRPS (also known as GEM-Hydro) is a <a href="../../NSRPS/diagrams/GEM-Hydro_schematic_current.png"> network of independent modelling systems </a> , which aims to provide the best possible representation of the current and future states of the land surface, as well as the movement of water over and through the soil column and through the lake and river networks. NSRPS is an integrated chain of numerical prediction systems, driven by high-resolution atmospheric forcing fields from the 
 High Resolution Deterministic Prediction System (HRDPS). The component systems of NSRPS include: </p>
 <ul>
 <li> <a href = "../../HREPA/HREPA-1.3.0"> High Resolution Ensemble Precipitation Analysis (HREPA) </a>
@@ -21,55 +20,27 @@ High Resolution Deterministic Prediction System (HRDPS). The component systems o
 <li> <a href = "../../../coming-soon"> Simulation Hydrodynamique Opérationnel (SHOP) </a>
 </ul>
 
-** Current version: ** 3.1.0
-<br>
-** Past versions: **
+
 <!-- 
 * [1.0](./path/to/old_version.md)
 * [2.0](../../license/license.md)
  -->
 
-### **What is the spatial resolution and coverage of this data?**
-
-<p>Discharge outputs from NSPRS are currently implemented at a 1-km resolution over six major river basins representing ~50% of Canada.
-As NSRPS is composed of different sub-systems, both the domain and spatial resolution vary based on the which sub-system the output is derived. 
-
-NSRPS is currently established in the following basins: 
-<ul>
-<li> Yukon River Basin </li>
-<li> Mackenzie River Basin </li>
-<li> Nelson River Basin  </li>
-<li> Churchill River Basin </li>
-<li> Great Lakes and St. Lawrence River Basin </li>
-</ul> 
-</p>
 
 ![alt text](domain-images/NSRPS_domain.png "Title")
 
-### **What is available?**
+### **Data Access**
+<p> <i> Coming to MSC Open Data, Spring 2023. Data are currently available through experimental or secured access.</i> </p>
  
-<details>
-<summary>How do I access the data? </summary>
-<br>
-<p> <i> Currently data from sub-systems is only available through ECCC's internal Science Network.</i> </p>
-</details>
 
+### **Additional Information**
 
-<details>
-<summary> What is the status of this product? </summary>
+** [Technical documentation](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_dhps-310_20211130_e.pdf) **
 <br>
-<b>Current Status</b>: Operational
+<a href="../../NSRPS/diagrams/NSRPS_chart_System_2023.png"> NSRPS System Flow Chart </a>
 <br>
-<p> click  <a href = "../../../additional_information/operational-statuses/operational-status">  here  </a>  for descriptions of various operational statuses </p>
-</details>
- 
-### **Where can I find additional information?**
+<a href="../../NSRPS/diagrams/NSRPS_chart_Interactions_2021.png"> NSRPS System Interactions Flow Chart </a>
 
-** [Technical note](documentation/Tech_note_dhps_v310_e_Final_20210915.pdf) **
-<br>
-** [Specifications](./) **
-<br>
-** [Change log](../Status_definitions/status.md) **
 
 ### **License**
 

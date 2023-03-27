@@ -50,7 +50,7 @@ National Hydrological Service
 <dd>
 <p>
 
-Canadian Meteorological Service 
+Canadian Meteorological Centre 
 
 </p>
 </dd>
