@@ -11,10 +11,11 @@ prediction products, and is a living document. </b>
 </p>
 
 
-This is a test for the NHS practitioners guide technical overview. 
 
-### About the National Hydrological Service (NHS)
-
+### About Canada's National Hydrological Service (NHS)
+The National Hydrological Service is responsible for monitoring water quantity and flow, across Canada, in partnership with the provinces and territories. The NHS is also responsible for water management of international and domestic transboundary water, in partnership with the International Joint Commission and the provinces and territories.  
+[More info](https://www.canada.ca/en/environment-climate-change/news/2019/06/transforming-canadas-water-monitoring-program.html)
 
 ### About the Canadian Meteorological Centre (CMC)
-
+The CMC is a center of expertise for environmental prediction services in Canada and is located in Dorval, Quebec.
+[More info](https://www.canada.ca/en/environment-climate-change/services/science-technology/centres/quebec.html#cmc)
