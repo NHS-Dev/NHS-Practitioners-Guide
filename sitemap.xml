@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/about/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/available-datasets/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/coming-soon/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/data_access/DataMart/</loc>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/coming-soon/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/data_access/GeoMet/</loc>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/data_access/file_formats/file_formats/</loc>
-     <lastmod>2022-03-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/coming-soon/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/tutorials/</loc>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/additional_information/glossary/glossary/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/additional_information/operational-statuses/operational-status/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <lastmod>2023-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/additional_information/ThemePages/snow/</loc>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://nhs-dev.github.io/NHS-Practitioners-Guide/license/license/</loc>
-     <lastmod>2022-03-22</lastmod>
+     <lastmod>2023-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
